@@ -1,7 +1,7 @@
 import React from 'react';
-import './about.css';
+import './contact.css';
 
-const about = () => {
+const Contact = () => {
     return (
         <div>
             
@@ -9,4 +9,4 @@ const about = () => {
     );
 };
 
-export default about;
+export default Contact;

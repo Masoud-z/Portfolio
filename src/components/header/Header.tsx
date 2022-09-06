@@ -1,7 +1,7 @@
 import React from 'react';
-import './about.css';
+import './header.css';
 
-const about = () => {
+const Header = () => {
     return (
         <div>
             
@@ -9,4 +9,4 @@ const about = () => {
     );
 };
 
-export default about;
+export default Header;
