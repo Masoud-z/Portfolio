@@ -18,6 +18,10 @@ header{
     justify-content: center;
 }
 
+.cta a{
+    transition: linear 0.5s;
+}
+
 
 .header__socials {
     display: flex;
@@ -36,6 +40,9 @@ header{
     background-color: var(--color-primary);
 }
 
+.header__socials a{
+    transition: linear 0.3s;
+}
 
 .me{
     background: linear-gradient(var(--color-primary), transparent);
@@ -57,6 +64,7 @@ header{
     transform: rotate(90deg);
     font-weight: 300;
     font-size: 0.9rem;
+    transition: linear 0.3s;
 }
 
 
