@@ -15,7 +15,7 @@
     --color-primary-varient: rgba(77,181,255,0.4);
     --color-light: rgba(255,255,255,0.6);
 
-    --transition: all 40ms ease;
+    --transition: linear 0.4s ;
 }
 
 /* 
