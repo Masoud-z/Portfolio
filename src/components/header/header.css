@@ -70,13 +70,13 @@ header{
 
 @media screen and (max-width: 1024px) {
     header{
-        height: 80vh;
+        height: 75vh;
     }
 }
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
    header{
         height: 100vh;
         
