@@ -30,8 +30,10 @@
 }
 
 .about__cards{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    display: flex;
+    justify-content: center;
     gap: 1.5rem;
 }
 
@@ -80,6 +82,9 @@
     width: 50%;
     margin: 0rem auto 4rem;
    }
+   .about__content{
+    margin: 0 2rem;
+   }
 
    .about__content p{
     margin: 1rem 0 1.5rem;
@@ -95,7 +100,7 @@
     }
 
     .about__cards{
-        grid-template-columns: 1fr 1fr;
+        flex-wrap: wrap;
         gap: 1rem;
     }
 
