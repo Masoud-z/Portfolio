@@ -1,0 +1,92 @@
+.testimonials__container{
+    width: 45%;
+}
+
+.client__avatar{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+}
+
+.client__avatar img{
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+}
+
+.client__avatar::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f10e";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    transform: translateY(25%);
+    background: hsl(205, 78%, 60%);
+    color: #fff;
+}
+
+.client__avatar::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: hsl(205, 78%, 60%);
+    position: absolute;
+    top: -0.25rem;
+    right: -0.5rem;
+    border-radius: 50%;
+}
+
+
+.testimonials{
+    background: var(--color-bg-varient);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 2rem;
+    user-select: none;
+}
+
+
+
+.client__review{
+    color: var(--color-light);
+    font-weight: 300;
+    display: block;
+    width: 80%;
+    margin: 0.8rem auto 1rem;
+}
+
+
+.swiper-pagination-clickable .swiper-pagination-bullet{
+    background: var(--color-primary);
+}
+
+
+
+@media screen and (max-width: 1024px) {
+   .testimonials__container{
+    width: 60%;
+   }
+ }
+ 
+ @media screen and (max-width: 600px) {
+    .testimonials__container{
+        width: 90%;
+       }
+       .client__reciew{
+        width: 90%;
+       }
+}
+
+
+
