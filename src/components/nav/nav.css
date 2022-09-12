@@ -37,3 +37,27 @@ nav a.active{
     background: var(--color-bg);
     color: white;
 }
+
+.tooltip{
+    overflow: hidden;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: max-content;
+    background-color: rgba(44, 44, 108,0.4);
+    color: rgba(255,255,255,0.4);
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 5px;
+    border-radius: 2rem;
+    position: absolute;
+    z-index: 1;
+    bottom: 80%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
