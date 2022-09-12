@@ -16,26 +16,26 @@ export const Clients :client[] =[
     new client(
         1,
         Avatar,
-        'Name',
-        ' 45g45g4g'
+        'Name 1',
+        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia magni tenetur ad deleniti dolor voluptate consequuntur, enim placeat distinctio, esse officiis. Voluptatem praesentium quam at, cumque quas omnis dolores similique. '
    
     ),
     new client(
         2,
         Avatar2,
-        'Name',
-        ' g5345g4'
+        'NSecond Name',
+        ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia magni tenetur ad deleniti dolor voluptate consequuntur, enim placeat distinctio, esse officiis. Voluptatem praesentium quam at, cumque quas omnis dolores similique.'
     ),
     new client(
         3,
         Avatar3,
-        'Name',
-        ' asdasdasd!'
+        'Some Name',
+        ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia magni tenetur ad deleniti dolor voluptate consequuntur, enim placeat distinctio, esse officiis. Voluptatem praesentium quam at, cumque quas omnis dolores similique.'
     ),
     new client(
         4,
         Avatar4,
-        'Name',
-        ' 3r23r2rf345g3g'
+        'Some Another Name',
+        ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia magni tenetur ad deleniti dolor voluptate consequuntur, enim placeat distinctio, esse officiis. Voluptatem praesentium quam at, cumque quas omnis dolores similique.'
     )
 ]
