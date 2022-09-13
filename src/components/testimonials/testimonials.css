@@ -1,3 +1,11 @@
+.testimonials{
+    background: var(--color-bg-varient);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 2rem;
+    user-select: none;
+}
+
 .testimonials__container{
     width: 45%;
 }
@@ -48,13 +56,6 @@
 }
 
 
-.testimonials{
-    background: var(--color-bg-varient);
-    text-align: center;
-    padding: 2rem;
-    border-radius: 2rem;
-    user-select: none;
-}
 
 
 
