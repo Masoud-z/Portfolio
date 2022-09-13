@@ -1,3 +1,60 @@
+@keyframes front {
+    0%   {opacity: 0;}
+    80%  {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+ @keyframes bg-me {
+    /* transform:translateX(-50%) scale(0); */
+    0%   {transform:translateX(-50%) scale(0);height: 0;}
+    40%  {transform:translateX(-50%) scale(0); height: 0;}
+    89%  {transform:translateX(-50%) scale(1)}
+    100% {transform:translateX(-50%); height: 33rem;}
+}
+
+ @keyframes me {
+    0%   {transform:translateY(100%); }
+    80%  {transform:translateY(100%); }
+    100% {transform:translateY(0); }
+}
+
+@keyframes btn{
+    0% {scale: 0; color: red; border-color: red;}
+    80% {scale: 0; color: red; border-color: red;}
+    100% {scale: 1; color: red; border-color: red;}
+}
+
+
+@keyframes socials{
+    0% {transform: translateY(200%);}
+    80% {transform: translateY(200%);}
+    100% {transform: translateY(0);}
+}
+
+@keyframes twit{
+    0% {transform: translateY(400%);}
+    80% {transform: translateY(400%);}
+    100% {transform: translateY(0);}
+}
+
+@keyframes git{
+    0% {transform: translateY(700%);}
+    84% {transform: translateY(700%);}
+    100% {transform: translateY(0);}
+}
+
+@keyframes linked{
+    0% {transform: translateY(900%);}
+    86% {transform: translateY(900%);}
+    100% {transform: translateY(0);}
+}
+
+@keyframes scroll{
+    0% {transform: translateY(-100vh) rotate(90deg) ; }
+    88% {transform: translateY(-100vh) rotate(90deg);}
+    100% {transform:  translateY(0) rotate(90deg);}
+}
+
 header{
     height: 100vh;
     padding-top: 8vh;
@@ -9,6 +66,16 @@ header{
     height: 100%;
     position: relative;
 }
+
+.header__container h5{
+    font-size: 1.1rem;
+}
+
+.front{
+    animation-name: front;
+    animation-duration: 4s;
+}
+
 
 
 .cta{
@@ -22,8 +89,14 @@ header{
     transition: linear 0.5s;
 }
 
+.btn{
+    animation-name: btn;
+    animation-duration: 6s;
+}
+
 
 .header__socials {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     gap: 1vh;
@@ -31,6 +104,23 @@ header{
     position: absolute;
     left: 0;
     bottom: 8vh;
+    animation-name: socials;
+    animation-duration: 4s;
+}
+
+.linked{
+    animation-name: linked;
+    animation-duration: 7s;
+}
+
+.git{
+    animation-name: git;
+    animation-duration: 6s;
+}
+
+.twit{
+    animation-name: twit;
+    animation-duration: 5s;
 }
 
 .header__socials::after{
@@ -55,6 +145,13 @@ header{
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
     padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    animation-name: bg-me;
+    animation-duration: 9s;
+}
+
+.me img{
+    animation-name: me;
+    animation-duration: 10s;
 }
 
  .scroll__down {
@@ -65,6 +162,8 @@ header{
     font-weight: 300;
     font-size: 0.9rem;
     transition: linear 0.3s;
+    animation-name: scroll;
+    animation-duration: 8s;
 }
 
 

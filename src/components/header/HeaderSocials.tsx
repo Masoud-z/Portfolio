@@ -6,15 +6,15 @@ import {BsTwitter} from 'react-icons/bs';
 const HeaderSocials = () => {
     return (
         <div className='header__socials'>
-            <a href="http://linkedin.com" target="_blank">
+            <a href="http://linkedin.com" target="_blank" className='linked'>
                 <BsLinkedin />
             </a>
 
-            <a href="http://github.com" target="_blank">
+            <a href="http://github.com" target="_blank" className='git'>
                 <BsGithub />
             </a>
             
-            <a href="http://twitter.com" target="_blank">
+            <a href="http://twitter.com" target="_blank" className='twit'>
                 <BsTwitter />
             </a>
         </div>
