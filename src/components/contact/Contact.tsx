@@ -1,7 +1,7 @@
 import React from 'react';
 import './contact.css';
 import {MdOutlineMail} from 'react-icons/md'
-import {RiMessengerLine} from 'react-icons/ri'
+import {BsLinkedin} from'react-icons/bs';
 import {BsWhatsapp} from 'react-icons/bs'
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
@@ -48,18 +48,26 @@ const Contact = () => {
                 </article>
 
                 <article className="contact__option">
-                    <RiMessengerLine className='contact__option-icon' />
-                    <h4>Messenger</h4>
-                    <h5>MAsoud</h5>
-                    <a href="https://m.me/masoud" target="_blank" rel="noreferrer" >
-                        Send a message
+                    <BsLinkedin className='contact__option-icon' />
+                    <h4>Linkedin</h4>
+                    <h5>
+                        <a href="https://www.linkedin.com/in/masoud-zeinalabedini/" target="_blank" rel="noreferrer"  className='no-link-effect'>
+                            Masoud Zeinalabedini
+                        </a>
+                    </h5>
+                    <a href="https://www.linkedin.com/in/masoud-zeinalabedini/" target="_blank" rel="noreferrer" >
+                        View profile
                     </a>
                 </article>
 
                 <article className="contact__option">
                     <BsWhatsapp className='contact__option-icon' />
                     <h4>WhatsApp</h4>
-                    <h5>+98 914 845 0108</h5>
+                    <h5>
+                        <a href="https://wa.me/+989148450108" target="_blank" rel="noreferrer" className='no-link-effect'>
+                            +98 914 845 0108
+                        </a>
+                    </h5>
                     <a href="https://wa.me/+989148450108" target="_blank" rel="noreferrer" >
                         Send a message
                     </a>

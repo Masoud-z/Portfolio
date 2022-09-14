@@ -62,6 +62,14 @@ input , textarea{
     font-size: 1.1rem;
 }
 
+.no-link-effect{
+    color: var(--color-light);
+}
+
+.no-link-effect:hover{
+    color: var(--color-light);
+}
+
 
 
 
