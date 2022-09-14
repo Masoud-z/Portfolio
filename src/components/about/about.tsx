@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './about.css';
 import me from '../../assets/me-about.jpg';
 import {FaAward} from 'react-icons/fa';
@@ -6,9 +6,14 @@ import {FiUsers} from 'react-icons/fi'
 import {VscFolderLibrary} from 'react-icons/vsc'
 
 const About = () => {
+    
+    const test:any = useRef();
+    
+    
+
     return (
         <section id='about'>
-            <h5>Gt To Know</h5>
+            <h5 ref={test}>Get To Know</h5>
             <h2>About Me</h2>
 
             <div className="container about__container">
