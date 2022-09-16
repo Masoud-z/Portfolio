@@ -1,19 +1,25 @@
-import { useState } from 'react';
+import { useState, useContext, useEffect } from 'react';
 import './nav.css';
 import {AiOutlineHome, AiOutlineUser} from 'react-icons/ai';
 import {BiBook, BiMessageSquareDetail} from 'react-icons/bi'
 import {RiServiceLine} from 'react-icons/ri'
+import { scrolledComponent } from '../../helper/scrolled';
 
 const Nav = () => {
 
-    const [active, setActive] = useState("#");
+    const {scrolled, setScrolled}: any = useContext(scrolledComponent)
+    const [active, setActive] = useState('#header');
+    useEffect(()=>{
+        setActive(scrolled);
+    }, [scrolled])
+        
 
     return (
         <nav>
             <a
-             href="#"
-             onClick={()=>setActive("#")}
-             className={active === '#' ? 'active' : ''}>
+             href="#header"
+             onClick={()=>setActive("#header")}
+             className={active === '#header' ? 'active' : ''}>
                  <AiOutlineHome/>
             </a>
 

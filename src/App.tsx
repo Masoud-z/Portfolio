@@ -1,3 +1,4 @@
+import { useRef, useEffect, useState } from 'react';
 import './App.css';
 
 import About from './components/about/about';
@@ -10,19 +11,88 @@ import Portfolio from './components/portfolio/Portfolio';
 import Services from './components/services/Services';
 import Testimonials from './components/testimonials/Testimonials';
 
+import { scrolledComponent } from './helper/scrolled';
+
 function App() {
+  const headerRef = useRef<HTMLTableSectionElement>(null);
+  const aboutRef = useRef<HTMLTableSectionElement>(null);
+  const experienceRef = useRef<HTMLTableSectionElement>(null);
+  const portfolioRef = useRef<HTMLTableSectionElement>(null);
+  const testimonialsRef = useRef<HTMLTableSectionElement>(null);
+  const contactRef = useRef<HTMLTableSectionElement>(null);
+
+
+	useEffect(() => {
+		window.addEventListener("scroll", scrollBehavior);
+		return () => {
+			window.removeEventListener("scroll", scrollBehavior);
+		};
+	}, []);
+
+	const scrollBehavior = () => {
+    const posHeader= headerRef.current?.offsetTop as number;
+    const posAbout= aboutRef.current?.offsetTop as number;
+    const posExperience= experienceRef.current?.offsetTop as number;
+    const posPortfolio= portfolioRef.current?.offsetTop as number;
+    const posTestimonials= testimonialsRef.current?.offsetTop as number;
+    const posContact= contactRef.current?.offsetTop as number;
+
+    if (
+			window.scrollY + window.innerHeight > posHeader &&
+      window.scrollY + window.innerHeight < posAbout
+		) setScrolled("#header");
+		else if (
+			window.scrollY + window.innerHeight > posAbout &&
+      window.scrollY + window.innerHeight < posExperience
+		) setScrolled("#about");
+    else if ( window.scrollY + window.innerHeight > posExperience && 
+      window.scrollY + window.innerHeight < posPortfolio
+      ) setScrolled('#experience');
+      else if ( window.scrollY + window.innerHeight > posPortfolio && 
+        window.scrollY + window.innerHeight < posTestimonials
+        ) setScrolled('#portfolio');
+        else if ( window.scrollY + window.innerHeight > posTestimonials && 
+          window.scrollY + window.innerHeight < posContact
+          ) setScrolled('#testimonials');
+          else if ( window.scrollY + window.innerHeight > posContact 
+            ) setScrolled('#contact');  
+	};
+
+  const [scrolled, setScrolled] = useState("#header");
+
   return (
-    <>
-    <Header />
+    <scrolledComponent.Provider value={{scrolled,setScrolled}}>
+    <div ref={headerRef}>
+      <Header/>
+    </div>
+
     <Nav />
-    <About />
-    <Experience />
+
+    <div ref={aboutRef}>
+      <About />
+    </div>
+
+    <div ref={experienceRef}>
+      <Experience />
+    </div>
+
     <Services />
-    <Portfolio />
-    <Testimonials />
-    <Contact />
-    <Footer />
-    </>
+
+    <div ref={portfolioRef}>
+      <Portfolio />
+    </div>
+
+    <div ref={testimonialsRef}>
+      <Testimonials />
+    </div>
+
+    <div ref={contactRef}>
+      <Contact />
+    </div>
+
+      <Footer />
+
+    </scrolledComponent.Provider>
   );
 }
 

@@ -22,7 +22,7 @@ const Header = () => {
         setText(updatedName);
     }
     return (
-        <header>
+        <header id='header'>
             <div className="container header__container">
                 <h5>Hello, I'm</h5>
                 <h1>
