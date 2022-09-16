@@ -8,12 +8,12 @@ const CTA = () => {
             <a
              href={CV} 
              download
-             className='btn'>
+             className='btn btn__header'>
                 Download CV
             </a>
             <a
              href="#contact"
-             className='btn btn-primary'>
+             className='btn btn-primary btn__header'>
                 Let't Talk
             </a>
         </div>

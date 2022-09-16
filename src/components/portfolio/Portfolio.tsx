@@ -15,29 +15,29 @@ const Portfolio = () => {
             <div className="container portfolio__container">
                 {portfolio.map(site=>{
                    return (
-                    <article key={site.id} className="portfolio__item">
-                    <div className="portfolio__item-image">
-                        <img src={site.img} alt={site.title} />
-                    </div>
-                    <h3>{site.title}</h3>
+                    <article key={site.id} className="portfolio__item ">
 
-                    <div className="portfolio__item-cta">
-                        <a
-                     href={site.github}
-                     target="_blank" 
-                     rel="noopener noreferrer" 
-                     className='btn'>
-                        Github
-                    </a>
-                    <a
-                     href={site.live} 
-                     target="_blank" 
-                     rel="noopener noreferrer" 
-                     className='btn btn-primary'>
-                        Live Demo
-                    </a>
-                    </div>
-                    
+                        <div className="portfolio__item-image">
+                            <img src={site.img} alt={site.title} />
+                        </div>
+                        <h3>{site.title}</h3>
+
+                        <div className="portfolio__item-cta">
+                            <a
+                            href={site.github}
+                            target="_blank" 
+                             rel="noopener noreferrer" 
+                             className='btn'>
+                                Github
+                            </a>
+                            <a
+                             href={site.live} 
+                             target="_blank" 
+                             rel="noopener noreferrer" 
+                             className='btn btn-primary'>
+                                Live Demo
+                            </a>
+                        </div>              
                 </article>
                    );
                 })}

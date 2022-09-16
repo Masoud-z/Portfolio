@@ -8,12 +8,12 @@ import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import Nav from './components/nav/Nav';
 import Portfolio from './components/portfolio/Portfolio';
-import Services from './components/services/Services';
 import Testimonials from './components/testimonials/Testimonials';
 
 import { scrolledComponent } from './helper/scrolled';
 
 function App() {
+  
   const headerRef = useRef<HTMLTableSectionElement>(null);
   const aboutRef = useRef<HTMLTableSectionElement>(null);
   const experienceRef = useRef<HTMLTableSectionElement>(null);

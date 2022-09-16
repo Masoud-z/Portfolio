@@ -89,7 +89,7 @@ header{
     transition: linear 0.5s;
 }
 
-.btn{
+.btn__header{
     animation-name: btn;
     animation-duration: 6s;
 }
