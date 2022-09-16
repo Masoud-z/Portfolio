@@ -28,6 +28,10 @@ nav a{
     color: var(--color-light);
 }
 
+a img{
+    width: 1rem;
+}
+
 nav a:hover{
     font-size: 1.3rem;
     background: rgba(0, 0,0, 0.3);

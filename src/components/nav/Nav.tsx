@@ -1,9 +1,10 @@
 import { useState, useContext, useEffect } from 'react';
 import './nav.css';
-import {AiOutlineHome, AiOutlineUser} from 'react-icons/ai';
+import {AiOutlineHome, AiOutlineUser,AiOutlineFileDone} from 'react-icons/ai';
 import {BiBook, BiMessageSquareDetail} from 'react-icons/bi'
 import {RiServiceLine} from 'react-icons/ri'
 import { scrolledComponent } from '../../helper/scrolled';
+
 
 const Nav = () => {
 
@@ -35,6 +36,13 @@ const Nav = () => {
              onClick={()=>setActive("#experience")}
              className={active === '#experience' ? 'active' : ''}>
                  <BiBook/>
+            </a>
+
+            <a
+             href="#portfolio"
+             onClick={()=>setActive("#portfolio")}
+             className={active === '#portfolio' ? 'active' : ''}>
+                 <AiOutlineFileDone />
             </a>
 
             <a
