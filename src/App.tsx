@@ -76,8 +76,6 @@ function App() {
       <Experience />
     </div>
 
-    <Services />
-
     <div ref={portfolioRef}>
       <Portfolio />
     </div>
