@@ -43,7 +43,7 @@ const Contact = () => {
                     <h4>Email</h4>
                     <h5>Masoud.Zeinalabedini@gmail.com</h5>
                     <a href="mailto:masoud.zeinalabedini@gmail.com" target="_blank" rel="noreferrer" >
-                        Send a message
+                        Send an email
                     </a>
                 </article>
 
