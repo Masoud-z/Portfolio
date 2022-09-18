@@ -89,6 +89,7 @@
    .about__me{
     width: 50%;
     margin: 0rem auto 4rem;
+    grid-area: 1 / 1 / 2 / 2;
    }
    .about__content{
     margin: 0 2rem;

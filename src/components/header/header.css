@@ -106,7 +106,7 @@ header{
     gap: 1vh;
     align-items: center;
     position: fixed;
-    left: 9vw;
+    left: 7vw;
     bottom: 0;
     animation-name: socials;
     animation-duration: 4s;
@@ -166,8 +166,8 @@ header{
 
  .scroll__down {
     position: absolute;
-    right: -2.3rem;
-    bottom: 13vh;
+    right: -7vw;
+    bottom: 12vh;
     transform: rotate(90deg);
     font-weight: 300;
     font-size: 0.9rem;
