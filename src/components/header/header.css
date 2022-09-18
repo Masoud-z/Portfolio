@@ -120,11 +120,17 @@ header{
 .git{
     animation-name: git;
     animation-duration: 6s;
+    font-size: 1.1rem;
 }
 
 .twit{
     animation-name: twit;
     animation-duration: 5s;
+    font-size: 1.3rem;
+}
+
+.mail{
+    font-size: 1.2rem;
 }
 
 .header__socials::after{
