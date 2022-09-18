@@ -26,6 +26,7 @@ const Testimonials = () => {
              slidesPerView={1}
              navigation
              pagination={{ clickable: true}}
+             loop={true}
              effect={"coverflow"}
              coverflowEffect={{
                 rotate: 50,
