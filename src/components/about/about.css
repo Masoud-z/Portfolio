@@ -8,7 +8,7 @@
 
 .about__container{
     display: grid;
-    grid-template-columns: 35% 50%;
+    grid-template-columns: 50% 35%;
     gap: 15%;
 }
 
@@ -29,12 +29,12 @@
 .about__me-image{
     border-radius: 2rem;
     overflow: hidden;
-    transform:rotate(10deg);
     transition: linear 0.4s;
+    transform: translate(-3%, -3%);
 }
 
 .about__me-image:hover{
-    transform: rotate(0);
+    transform: translate(-6%, -6%);
 }
 
 .about__cards{

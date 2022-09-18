@@ -17,12 +17,7 @@ const About = () => {
             <h2 className='size'><span className='color'>About</span> Me</h2>
 
             <div className="container about__container">
-                <div className="about__me">
-                    <div className="about__me-image">
-                        <img src={me} alt="Masoud" />
-                    </div>
-                </div>
-
+                
                 <div className="about__content">
                     <div className="about__cards">
                         <article className="about__card">
@@ -51,6 +46,12 @@ const About = () => {
                      className='btn btn-primary'>
                         Let's Talk
                     </a>
+                </div>
+
+                <div className="about__me">
+                    <div className="about__me-image">
+                        <img src={me} alt="Masoud" />
+                    </div>
                 </div>
             </div>
         </section>
