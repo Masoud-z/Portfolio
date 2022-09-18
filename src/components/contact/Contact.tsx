@@ -33,14 +33,15 @@ const Contact = () => {
 
     return (
         <section id='contact'>
-            <h5>Get In Touch</h5>
-            <h2>Contact Me</h2>
+            <h5>Let's Keep in Touch</h5>
+            <h2 className='size'>Contact Me</h2>
 
             <div className="container contact__container">
+                <h1>Get In Touch</h1>
                 <div className="contact__options">
                 <article className="contact__option">
                     <MdOutlineMail className='contact__option-icon' />
-                    <h4>Email</h4>
+                    {/* <h4>Email</h4> */}
                     <h5>Masoud.Zeinalabedini@gmail.com</h5>
                     <a href="mailto:masoud.zeinalabedini@gmail.com" target="_blank" rel="noreferrer" >
                         Send an email
@@ -49,7 +50,7 @@ const Contact = () => {
 
                 <article className="contact__option">
                     <BsLinkedin className='contact__option-icon' />
-                    <h4>Linkedin</h4>
+                    {/* <h4>Linkedin</h4> */}
                     <h5>
                         <a href="https://www.linkedin.com/in/masoud-zeinalabedini/" target="_blank" rel="noreferrer"  className='no-link-effect'>
                             Masoud Zeinalabedini
@@ -62,7 +63,7 @@ const Contact = () => {
 
                 <article className="contact__option">
                     <BsWhatsapp className='contact__option-icon' />
-                    <h4>WhatsApp</h4>
+                    {/* <h4>WhatsApp</h4> */}
                     <h5>
                         <a href="https://wa.me/+989148450108" target="_blank" rel="noreferrer" className='no-link-effect'>
                             +98 914 845 0108
@@ -78,7 +79,7 @@ const Contact = () => {
                 <form ref={form} onSubmit={sendEmail}>
                     <input type="text" name="name" placeholder="Your Name" required/>
                     <input type="email" name="email" placeholder="Your Email" required/>
-                    <textarea name="message" rows={7} placeholder="Your Message" required></textarea>
+                    <textarea name="message" rows={5} placeholder="Your Message" required></textarea>
                     <button type="submit" className='btn btn-primary'>Send Message</button>
                     <ToastContainer autoClose={1000} position="top-center"/>
                 </form>
