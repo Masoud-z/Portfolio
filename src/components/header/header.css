@@ -105,9 +105,9 @@ header{
     flex-direction: column;
     gap: 1vh;
     align-items: center;
-    position: absolute;
-    left: 0;
-    bottom: 8vh;
+    position: fixed;
+    left: 9vw;
+    bottom: 0;
     animation-name: socials;
     animation-duration: 4s;
 }
@@ -130,7 +130,7 @@ header{
 .header__socials::after{
     content: "";
     width: 1px;
-    height: 2rem;
+    height: 4rem;
     background-color: var(--color-primary);
 }
 

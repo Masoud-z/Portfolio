@@ -2,6 +2,7 @@ import React from 'react';
 import {BsLinkedin} from'react-icons/bs';
 import {BsGithub} from 'react-icons/bs';
 import {BsTwitter} from 'react-icons/bs';
+import {MdOutlineMail} from 'react-icons/md'
 
 const HeaderSocials = () => {
     return (
@@ -16,6 +17,10 @@ const HeaderSocials = () => {
             
             <a href="https://twitter.com/Masoud_Zin" target="_blank" className='twit'>
                 <BsTwitter />
+            </a>
+
+            <a href="mailto:masoud.zeinalabedini@gmail.com" target="_blank" rel="noreferrer" >
+                <MdOutlineMail />
             </a>
         </div>
     );
