@@ -27,7 +27,7 @@ const Header = () => {
                 <h5>Hello, I'm</h5>
                 <h1>
                     {text}
-                    </h1>
+                </h1>
                 <h5 className="text-light front">
                     Frontend Developer
                 </h5>

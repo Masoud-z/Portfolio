@@ -1,3 +1,11 @@
+.color{
+    color: white;
+}
+
+.size{
+    font-size: 2rem;
+}
+
 .about__container{
     display: grid;
     grid-template-columns: 35% 50%;
