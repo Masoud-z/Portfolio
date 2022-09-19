@@ -57,9 +57,9 @@ function App() {
           window.scrollY + window.innerHeight < posContact
           ) setScrolled('#testimonials');
           else if ( window.scrollY + window.innerHeight > posContact &&
-            window.scrollY + window.innerHeight - 60 < posFooter 
+            window.scrollY + window.innerHeight < posFooter 
             ) setScrolled('#contact');
-            else  setScrolled('footer');
+            else if( window.scrollY + window.innerHeight -80 > posFooter)  setScrolled('footer');
 	};
 
   const [scrolled, setScrolled] = useState("#header");
