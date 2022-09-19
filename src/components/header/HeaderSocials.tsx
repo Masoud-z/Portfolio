@@ -11,7 +11,7 @@ const HeaderSocials = () => {
     const {scrolled, setScrolled}: any = useContext(scrolledComponent);
     return (
         <div
-         className={scrolled === 'footer' ? 'sticky header__socials' : 'header__socials'}>
+         className={scrolled === 'footer' ? 'out header__socials' : 'header__socials'}>
             <a href="https://www.linkedin.com/in/masoud-zeinalabedini/" target="_blank" className='linked' rel="noreferrer">
                 <BsLinkedin />
             </a>

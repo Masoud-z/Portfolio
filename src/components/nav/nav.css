@@ -1,3 +1,33 @@
+@keyframes cv-color {
+    0%   {
+        transform: scale(1);
+        text-shadow: 1px 1px rgba(255, 0, 0, 0.5);
+    }
+
+    50%  {
+        transform: scale(1.2);
+
+    }
+    100% {
+        transform: scale(1);
+
+    }
+}
+
+@keyframes talk-color {
+    0%   {
+        transform: scale(1.2);
+    }
+   
+    50%  {
+        transform: scale(1);
+        text-shadow: 1px 1px rgba(255, 0, 0, 0.5);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
 nav{
     background: rgba(250,250,250,0.15);
     width: max-content;
@@ -40,6 +70,41 @@ nav a:hover{
 nav a.active{
     background: var(--color-primary);
     color: var(--color-bg);
+}
+
+.cta__fixed{
+    position: fixed;
+    right: 3vw;
+    bottom: 12vh;
+    display: flex;
+    flex-direction: column;
+    transition: linear 0.8s;
+}
+
+.btn__cv{
+    padding: 0.7rem 0.9rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    animation-name: cv-color;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+}
+
+
+.btn__talk{
+    border-radius: 50%;
+    padding: 0.8rem 0.5rem;
+    animation-name: talk-color;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+.out{
+    bottom: -30vh;
 }
 
 

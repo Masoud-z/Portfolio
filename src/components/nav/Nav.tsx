@@ -1,9 +1,10 @@
-import { useState, useContext, useEffect } from 'react';
+import { useState, useContext, useEffect, MouseEventHandler } from 'react';
 import './nav.css';
 import {AiOutlineHome, AiOutlineUser,AiOutlineFileDone} from 'react-icons/ai';
 import {BiBook, BiMessageSquareDetail} from 'react-icons/bi'
 import {RiServiceLine} from 'react-icons/ri'
 import { scrolledComponent } from '../../helper/scrolled';
+import CV from '../../assets/cv.pdf';
 
 
 const Nav = () => {
@@ -13,9 +14,16 @@ const Nav = () => {
     useEffect(()=>{
         setActive(scrolled);
     }, [scrolled])
+
+    let showCTA = false;
+    if( scrolled === '#experience' || 
+        scrolled === '#portfolio' ||
+        scrolled === '#testimonials' ) showCTA = true;
+    
         
 
     return (
+        <>
         <nav>
             <a
              href="#header"
@@ -59,6 +67,24 @@ const Nav = () => {
                  <BiMessageSquareDetail className='tooltip'/> 
             </a>
         </nav>
+
+
+        <div className={ showCTA ?'cta__fixed' : 'cta__fixed out'}>
+
+            <a
+             href={CV} 
+             download
+             className='btn btn__cv'>
+                CV
+            </a>
+
+            <a
+             href="#contact"
+             className='btn btn-primary btn__talk'>
+                Talk
+            </a>
+        </div>
+        </>
     );
 };
 

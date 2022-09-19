@@ -113,7 +113,7 @@ header{
     transition: linear 0.7s ;
 }
 
-.sticky{
+.out{
     bottom: 100%;
 }
 
