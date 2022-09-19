@@ -1,90 +1,67 @@
 import React from 'react';
 import './experience.css';
-import {BsFillPatchCheckFill} from 'react-icons/bs';
+import emotion from '../../assets/emotion.png'
+import {BsBootstrap} from 'react-icons/bs';
+import {AiOutlineHtml5} from 'react-icons/ai';
+import {TbBrandCss3} from 'react-icons/tb';
+import {SiJavascript, SiMaterialui,SiTypescript} from 'react-icons/si';
+import {FaReact,FaSass} from 'react-icons/fa';
 
 const Experience = () => {
     return (
         <section id='experience'>
             <h5>What Skills I Have</h5>
-            <h2>My Experience</h2>
+            <h2>My Toolkit</h2>
 
             <div className="container experience__container">
-                <div className="experience__frontend">
-                    <h3>Frontend Development</h3>
                     <div className="experience__content">
+                       
                         <article className="experience__details">
-                            <BsFillPatchCheckFill className="experience__details-icon" />
-                            <div>
-                                <h4>HTML</h4>
-                                <small className="text-light">Experienced</small>
-                            </div>
+                            <AiOutlineHtml5 className="experience__details-icon" />
+                            <h4>HTML</h4> 
                         </article>
 
                         <article className="experience__details">
-                            <BsFillPatchCheckFill className="experience__details-icon" />
-                            <div>
-                                <h4>CSS</h4>
-                                <small className="text-light">Experienced</small>
-                            </div>
+                            <TbBrandCss3 className="experience__details-icon" />
+                            <h4>CSS</h4>
                         </article>
 
                         <article className="experience__details">
-                            <BsFillPatchCheckFill className="experience__details-icon" />
-                            <div>
+                            <SiJavascript className="experience__details-icon" />
                                 <h4>JavaScript</h4>
-                                <small className="text-light">Experienced</small>
-                            </div>
                         </article>
 
                         <article className="experience__details">
-                            <BsFillPatchCheckFill className="experience__details-icon" />
-                            <div>
-                                <h4>TypeScript</h4>
-                                <small className="text-light">Experienced</small>
-                            </div>
+                            <SiTypescript className="experience__details-icon" />
+                            <h4>TypeScript</h4>
                         </article>
 
                         <article className="experience__details">
-                            <BsFillPatchCheckFill className="experience__details-icon" />
-                            <div>
-                                <h4>React</h4>
-                                <small className="text-light">Experienced</small>
-                            </div>
+                            <FaReact className="experience__details-icon" />
+                            <h4>React</h4>
                         </article>
 
                         <article className="experience__details">
-                            <BsFillPatchCheckFill className="experience__details-icon" />
-                            <div>
-                                <h4>Emotion</h4>
-                                <small className="text-light">Experienced</small>
-                            </div>
+                            <img src={emotion} alt="Emotion" className='experience__details-img'/>
+                           <h4>Emotion</h4>
                         </article>
 
                         <article className="experience__details">
-                            <BsFillPatchCheckFill className="experience__details-icon" />
-                            <div>
-                                <h4>Material UI</h4>
-                                <small className="text-light">Experienced</small>
-                            </div>
+                            <SiMaterialui className="experience__details-icon" />
+                            <h4>Material UI</h4>
                         </article>
 
                         <article className="experience__details">
-                            <BsFillPatchCheckFill className="experience__details-icon" />
-                            <div>
-                                <h4>Sass</h4>
-                                <small className="text-light">Experienced</small>
-                            </div>
+                            <FaSass className="experience__details-icon"/>
+                            <h4>Sass</h4>
                         </article>
 
                         <article className="experience__details">
-                            <BsFillPatchCheckFill className="experience__details-icon" />
-                            <div>
-                                <h4>Bootstrap</h4>
-                                <small className="text-light">Experienced</small>
-                            </div>
+                            <BsBootstrap className="experience__details-icon" />
+                            <h4>Bootstrap</h4>
                         </article>
                     </div>
-                </div>
+                
             </div>
         </section>
     );

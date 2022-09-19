@@ -32,12 +32,20 @@
 
 .experience__details{
     display: flex;
+    flex-direction: column;
     gap: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .experience__details-icon{
     margin-top: 6px;
     color: var(--color-primary);
+    font-size: 2rem;
+}
+
+.experience__details-img{
+    width: 2rem;
 }
 
 
