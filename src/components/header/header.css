@@ -110,6 +110,11 @@ header{
     bottom: 0;
     animation-name: socials;
     animation-duration: 4s;
+    transition: linear 0.7s ;
+}
+
+.sticky{
+    bottom: 100%;
 }
 
 .linked{

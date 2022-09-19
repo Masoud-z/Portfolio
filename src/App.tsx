@@ -20,6 +20,7 @@ function App() {
   const portfolioRef = useRef<HTMLTableSectionElement>(null);
   const testimonialsRef = useRef<HTMLTableSectionElement>(null);
   const contactRef = useRef<HTMLTableSectionElement>(null);
+  const footerRef = useRef<HTMLTableSectionElement>(null);
 
 
 	useEffect(() => {
@@ -36,6 +37,7 @@ function App() {
     const posPortfolio= portfolioRef.current?.offsetTop as number;
     const posTestimonials= testimonialsRef.current?.offsetTop as number;
     const posContact= contactRef.current?.offsetTop as number;
+    const posFooter= footerRef.current?.offsetTop as number;
 
     if (
 			window.scrollY + window.innerHeight > posHeader &&
@@ -54,8 +56,10 @@ function App() {
         else if ( window.scrollY + window.innerHeight > posTestimonials && 
           window.scrollY + window.innerHeight < posContact
           ) setScrolled('#testimonials');
-          else if ( window.scrollY + window.innerHeight > posContact 
-            ) setScrolled('#contact');  
+          else if ( window.scrollY + window.innerHeight > posContact &&
+            window.scrollY + window.innerHeight - 60 < posFooter 
+            ) setScrolled('#contact');
+            else  setScrolled('footer');
 	};
 
   const [scrolled, setScrolled] = useState("#header");
@@ -88,8 +92,9 @@ function App() {
       <Contact />
     </div>
 
+    <div ref={footerRef}>
       <Footer />
-
+    </div>
     </scrolledComponent.Provider>
   );
 }

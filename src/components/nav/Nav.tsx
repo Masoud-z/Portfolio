@@ -8,7 +8,7 @@ import { scrolledComponent } from '../../helper/scrolled';
 
 const Nav = () => {
 
-    const {scrolled, setScrolled}: any = useContext(scrolledComponent)
+    const {scrolled, setScrolled}: any = useContext(scrolledComponent);
     const [active, setActive] = useState('#header');
     useEffect(()=>{
         setActive(scrolled);

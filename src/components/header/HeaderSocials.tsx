@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {BsLinkedin} from'react-icons/bs';
 import {BsGithub} from 'react-icons/bs';
 import {AiFillTwitterCircle} from 'react-icons/ai';
 import {HiMail} from 'react-icons/hi'
+import { scrolledComponent } from '../../helper/scrolled';
+
 
 const HeaderSocials = () => {
+
+    const {scrolled, setScrolled}: any = useContext(scrolledComponent);
     return (
-        <div className='header__socials'>
+        <div
+         className={scrolled === 'footer' ? 'sticky header__socials' : 'header__socials'}>
             <a href="https://www.linkedin.com/in/masoud-zeinalabedini/" target="_blank" className='linked' rel="noreferrer">
                 <BsLinkedin />
             </a>
