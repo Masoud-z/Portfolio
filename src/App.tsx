@@ -42,7 +42,9 @@ function App() {
     if (
 			window.scrollY + window.innerHeight > posHeader &&
       window.scrollY + window.innerHeight < posAbout
-		) setScrolled("#header");
+		) {
+      setScrolled("#header");
+    }
 		else if (
 			window.scrollY + window.innerHeight > posAbout &&
       window.scrollY + window.innerHeight < posExperience
@@ -62,7 +64,7 @@ function App() {
             else if( window.scrollY + window.innerHeight -80 > posFooter)  setScrolled('footer');
 	};
 
-  const [scrolled, setScrolled] = useState("#header");
+  const [scrolled, setScrolled] = useState('#header');
 
   return (
     <scrolledComponent.Provider value={{scrolled,setScrolled}}>

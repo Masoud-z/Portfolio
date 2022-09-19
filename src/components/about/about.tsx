@@ -1,9 +1,9 @@
-import React, { useRef } from 'react';
 import './about.css';
 import me from '../../assets/me-about.jpg';
 import {FaAward} from 'react-icons/fa';
 import {FiUsers} from 'react-icons/fi'
 import {VscFolderLibrary} from 'react-icons/vsc'
+import CV from '../../assets/cv.pdf';
 
 const About = () => {
     
@@ -37,11 +37,19 @@ const About = () => {
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, debitis similique, saepe doloremque sapiente necessitatibus ut reiciendis alias beatae totam atque ad minus excepturi quod quaerat hic earum numquam aspernatur?</p>
 
-                    <a
-                     href="#contact"
-                     className='btn btn-primary'>
-                        Let's Talk
-                    </a>
+                    <div className='cta'>
+                        <a
+                         href="#contact"
+                         className='btn btn-primary'>
+                            Let's Talk
+                        </a>
+                        <a
+                         href={CV} 
+                         download
+                         className='btn'>
+                            Download CV
+                        </a>
+                    </div>
                 </div>
 
                 <div className="about__me">
