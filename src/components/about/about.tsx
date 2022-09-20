@@ -15,28 +15,9 @@ const About = () => {
             <div className="container about__container">
                 
                 <div className="about__content">
-                    <div className="about__cards">
-                        <article className="about__card">
-                            <FaAward className='about__icon'/>
-                           <h5>Experience</h5>
-                           <small>3+ Years Working</small> 
-                        </article>
-               
-                        <article className="about__card">
-                            <FiUsers className='about__icon'/>
-                           <h5>Clients</h5>
-                           <small>200+ WorldWide</small> 
-                        </article>
-                  
-                        <article className="about__card">
-                            <VscFolderLibrary className='about__icon'/>
-                           <h5>Projects</h5>
-                           <small>80+ Completed </small> 
-                        </article>
-                    </div>
-
+                    
                     <div  className='border'>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, debitis similique, saepe doloremque sapiente necessitatibus ut reiciendis alias beatae totam atque ad minus excepturi quod quaerat hic earum numquam aspernatur?</p>
+                        <p>I'm always looking for opportunities to expand upon my skills and am currently seeking a remote full-time junior web developer position or internship.</p>
                     </div>
 
                     <div className='cta'>

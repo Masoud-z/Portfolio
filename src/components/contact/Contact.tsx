@@ -44,7 +44,6 @@ const Contact = () => {
                 <div className='connect__container'>
                     <h1>Let's Connect!</h1>
                 </div>
-                {/* I'm always looking for opportunities to expand upon my skills and am currently seeking a remote full-time junior web developer position or internship. */}
                 <div className="contact__options">
                     <h4> I am interested in working with any company that thinks my skill will be helpful for them. If you are looking for someone like me, or just want a quick chat, you can find me on social media or you can send me a message here!</h4>
 
