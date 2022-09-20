@@ -33,15 +33,19 @@
     color: white;
 }
 
+.bold{
+    font-weight: bold;
+}
+
 .size{
     font-size: 2rem;
 }
 
 .about__container{
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: grid;
-    grid-template-columns: 50% 35%;
-    gap: 15%;
+    grid-template-columns: 55% 35%;
+    gap: 5% 10%;
 }
 
 .about__me{
@@ -55,7 +59,8 @@
         transparent
     );
     display: grid;
-    place-items: center;   
+    place-items: center;
+    max-width: 300px;   
 }
 
 .about__me-image{
@@ -71,10 +76,13 @@
 }
 
 .border p{
-    padding: 10px;
+    padding: 15px 10px;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
 }
 
 .border{
+    background-color: var(--color-bg-varient);
     box-shadow: inset 0 0 0 2px transparent;
     transition: color 1s;
     position: relative;
@@ -82,7 +90,6 @@
 
 .border::before,
 .border::after {
-    /* border-radius: 2rem; */
     box-sizing: inherit;
     content: '';
     position: absolute;
@@ -91,8 +98,6 @@
     transition: linear 1s;
 
     border: 2px solid transparent;
-    /* width: 0;
-    height: 0; */
     animation-name: border-line;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -109,12 +114,7 @@
     right: 0;
 }
 
-/* 
-.border::before,
-.border::after{
-    width: 100%;
-    height: 100%;
-} */
+
 
 
 .border::before {
@@ -137,16 +137,17 @@
 }
 
 
-.about__icon{
+.name{
     color: var(--color-primary);
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
 }
 
+
 .about__content p{
-    margin: 2rem 0 2.6rem;
+    margin: 0rem 0 1rem;
     color: var(--color-light);
+    text-align: center;
 }
+
 
 
 @media screen and (max-width: 1024px) {
@@ -165,7 +166,7 @@
    }
 
    .about__content p{
-    margin: 1rem 0 1.5rem;
+    margin: 0rem 0 1rem;
    }
 }
 
