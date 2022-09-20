@@ -1,18 +1,7 @@
-@keyframes cv-color {
-    0%   {
-        transform: scale(1);
-        text-shadow: 1px 1px rgba(255, 0, 0, 0.5);
-    }
-
-    50%  {
-        transform: scale(1.2);
-
-    }
-    100% {
-        transform: scale(1);
-
-    }
-}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
 
 nav{
     background: rgba(250,250,250,0.15);
@@ -68,14 +57,33 @@ nav a.active{
 }
 
 .btn__cv{
+    position: absolute;
     padding: 0.7rem 0.9rem;
     border-radius: 50%;
     margin-bottom: 1rem;
-    animation-name: cv-color;
+    right: 0vw;
+    bottom: 8vh;
+    color: #4db5ff;
+    /* animation-name: cv-color;
     animation-duration: 4s;
-    animation-iteration-count: infinite;
-
+    animation-iteration-count: infinite; */
 }
+
+.circle{
+    right: 0vw;
+    bottom: calc(8vh + 0.8rem) ;
+    position: absolute;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    border-top: 2px solid #4db5ff;
+    border-bottom: 2px solid #4db5ff;
+    width: 55px;
+    height: 55px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+
 .out{
     bottom: -30vh;
 }
