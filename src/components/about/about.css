@@ -32,51 +32,58 @@
     overflow: hidden;
     transition: color 0.25s;
     transform: translate(-3%, -3%);
-    box-shadow: inset 0 0 0 2px transparent;
     transition: var(--transition);
 }
 
-.about__me-image::before,
-.about__me-image::after {
-    border-radius: 2rem;
+.about__me-image:hover{
+    transform: translate(-4%, -4%);
+}
+
+.border p{
+    padding: 10px;
+}
+
+.border{
+    box-shadow: inset 0 0 0 2px transparent;
+    transition: color 1s;
+    position: relative;
+}
+
+.border::before,
+.border::after {
+    /* border-radius: 2rem; */
     box-sizing: inherit;
     content: '';
     position: absolute;
     width: 100%;
     height: 100%;
-}
+    transition: linear 1s;
 
-.about__me-image::before,
-.about__me-image::after {
     border: 2px solid transparent;
     width: 0;
     height: 0;
 }
 
 
-.about__me-image::before{
+.border::before{
     top: 0;
     left: 0;
 }
 
-.about__me-image::after{
+.border::after{
     bottom: 0;
     right: 0;
 }
 
 
-.about__me-image:hover{
-    transform: translate(-4%, -4%);
-}
-
-.about__me-image:hover::before,
-.about__me-image:hover::after{
+.border:hover::before,
+.border:hover::after{
     width: 100%;
     height: 100%;
 }
 
 
-.about__me-image:hover::before {
+.border:hover::before {
     border-top-color: var(--color-primary); 
     border-right-color:var(--color-primary);
     transition:
@@ -84,13 +91,14 @@
       height 0.25s ease-out 0.25s; 
 }
 
-.about__me-image:hover::after {
+.border:hover::after {
     border-bottom-color: var(--color-primary); 
     border-left-color: var(--color-primary);
     transition:
       border-color 0s ease-out 0.5s, 
       width 0.25s ease-out 0.5s, 
       height 0.25s ease-out 0.75s; 
+
   }
 
 .about__cards{

@@ -35,7 +35,9 @@ const About = () => {
                         </article>
                     </div>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, debitis similique, saepe doloremque sapiente necessitatibus ut reiciendis alias beatae totam atque ad minus excepturi quod quaerat hic earum numquam aspernatur?</p>
+                    <div  className='border'>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, debitis similique, saepe doloremque sapiente necessitatibus ut reiciendis alias beatae totam atque ad minus excepturi quod quaerat hic earum numquam aspernatur?</p>
+                    </div>
 
                     <div className='cta'>
                         <a
