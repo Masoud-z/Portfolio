@@ -88,5 +88,10 @@ nav a.active{
     bottom: -30vh;
 }
 
+@media screen and (max-width: 600px) {
+    .cta__fixed{
+        display: none;
+    }
 
+}
 

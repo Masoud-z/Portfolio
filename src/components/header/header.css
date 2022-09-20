@@ -26,32 +26,42 @@
 
 
 @keyframes socials{
-    0% {transform: translateY(20vh);}
-    80% {transform: translateY(20vh);}
+    0% {transform: translateY(20vh);
+        visibility: hidden;}
+    80% {transform: translateY(20vh);
+         visibility: hidden;}
     100% {transform: translateY(0);}
 }
 
 @keyframes whats{
-    0% {transform: translateY(30vh);}
-    86% {transform: translateY(30vh);}
+    0% {transform: translateY(30vh);
+        visibility: hidden;}
+    86% {transform: translateY(30vh);
+        visibility: hidden;}
     100% {transform: translateY(0);}
 }
 
 @keyframes twit{
-    0% {transform: translateY(40vh);}
-    80% {transform: translateY(40vh);}
+    0% {transform: translateY(40vh);
+        visibility: hidden;}
+    80% {transform: translateY(40vh);
+        visibility: hidden;}
     100% {transform: translateY(0);}
 }
 
 @keyframes git{
-    0% {transform: translateY(50vh);}
-    84% {transform: translateY(50vh);}
+    0% {transform: translateY(50vh);
+        visibility: hidden;}
+    84% {transform: translateY(50vh);
+        visibility: hidden;}
     100% {transform: translateY(0);}
 }
 
 @keyframes linked{
-    0% {transform: translateY(50vh);}
-    86% {transform: translateY(50vh);}
+    0% {transform: translateY(50vh);
+        visibility: hidden;}
+    86% {transform: translateY(50vh);
+        visibility: hidden;}
     100% {transform: translateY(0);}
 }
 
