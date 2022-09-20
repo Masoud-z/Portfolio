@@ -19,8 +19,6 @@ const Nav = () => {
         scrolled === '#about' ||
         scrolled === 'footer') showCTA = false;
         
-    
-        
 
     return (
         <>
@@ -70,14 +68,10 @@ const Nav = () => {
 
 
         <div className={ showCTA ?'cta__fixed' : 'cta__fixed out'}>
-            {/* <a
-             href={CV} 
-             download
-             className='btn btn__cv'> */}
-                <div className='btn__cv'> CV </div>
-            {/* </a> */}
+
+            <div className='btn__cv'> CV </div>
             <a href={CV} 
-                    download>
+               download>
                 <div className="circle"></div>
             </a>
         </div>

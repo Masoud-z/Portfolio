@@ -113,8 +113,8 @@ header{
     transition: linear 0.7s ;
 }
 
-.out{
-    bottom: 100%;
+.get-out{
+    bottom: 100vh;
 }
 
 .linked{
