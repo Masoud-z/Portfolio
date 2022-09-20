@@ -1,9 +1,13 @@
-import React from 'react';
-import './contact.css';
-import {MdOutlineMail} from 'react-icons/md'
-import {BsLinkedin} from'react-icons/bs';
-import {BsWhatsapp} from 'react-icons/bs'
 import { useRef } from 'react';
+import React from 'react';
+
+import './contact.css';
+
+import {MdOutlineMail} from 'react-icons/md'
+import {BsWhatsapp, BsGithub} from 'react-icons/bs';
+import {FaLinkedinIn} from 'react-icons/fa';
+import {AiOutlineTwitter} from 'react-icons/ai';
+
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -33,46 +37,38 @@ const Contact = () => {
 
     return (
         <section id='contact'>
-            <h5>Let's Keep in Touch</h5>
+            <h5>Get in Touch</h5>
             <h2 className='size'>Contact Me</h2>
 
             <div className="container contact__container">
-                <h1>Get In Touch</h1>
+                <div className='connect__container'>
+                    <h1>Let's Connect!</h1>
+                </div>
+                {/* I'm always looking for opportunities to expand upon my skills and am currently seeking a remote full-time junior web developer position or internship. */}
                 <div className="contact__options">
-                <article className="contact__option">
-                    <MdOutlineMail className='contact__option-icon' />
-                    {/* <h4>Email</h4> */}
-                    <h5>Masoud.Zeinalabedini@gmail.com</h5>
-                    <a href="mailto:masoud.zeinalabedini@gmail.com" target="_blank" rel="noreferrer" >
-                        Send an email
-                    </a>
-                </article>
+                    <h4> I am interested in working with any company that thinks my skill will be helpful for them. If you are looking for someone like me, or just want a quick chat, you can find me on social media or you can send me a message here!</h4>
 
-                <article className="contact__option">
-                    <BsLinkedin className='contact__option-icon' />
-                    {/* <h4>Linkedin</h4> */}
-                    <h5>
-                        <a href="https://www.linkedin.com/in/masoud-zeinalabedini/" target="_blank" rel="noreferrer"  className='no-link-effect'>
-                            Masoud Zeinalabedini
+                    <div className="cotact__options__social">
+                        <a href="mailto:masoud.zeinalabedini@gmail.com" target="_blank" rel="noreferrer" >
+                            <MdOutlineMail className='contact__option-icon' />
                         </a>
-                    </h5>
-                    <a href="https://www.linkedin.com/in/masoud-zeinalabedini/" target="_blank" rel="noreferrer" >
-                        View profile
-                    </a>
-                </article>
 
-                <article className="contact__option">
-                    <BsWhatsapp className='contact__option-icon' />
-                    {/* <h4>WhatsApp</h4> */}
-                    <h5>
-                        <a href="https://wa.me/+989148450108" target="_blank" rel="noreferrer" className='no-link-effect'>
-                            +98 914 845 0108
+                        <a href="https://www.linkedin.com/in/masoud-zeinalabedini/" target="_blank" rel="noreferrer">
+                            <FaLinkedinIn className='contact__option-icon' />
                         </a>
-                    </h5>
-                    <a href="https://wa.me/+989148450108" target="_blank" rel="noreferrer" >
-                        Send a message
-                    </a>
-                </article>
+
+                        <a href="https://wa.me/+989148450108" target="_blank" rel="noreferrer">
+                            <BsWhatsapp className='contact__option-icon' />
+                        </a>
+
+                        <a href="https://twitter.com/Masoud_Zin" target="_blank"  rel="noreferrer">
+                            <AiOutlineTwitter className='contact__option-icon'/>
+                        </a>
+
+                        <a href="https://github.com/Masoud-z" target="_blank"  rel="noreferrer">
+                            <BsGithub className='contact__option-icon'/>
+                        </a>
+                    </div>
                 </div>
             
 
