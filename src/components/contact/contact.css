@@ -52,20 +52,6 @@
 
 
 
-/* .contact__option{
-    background: var(--color-bg-varient);
-    padding: 0.5rem;
-    border-radius: 1.2rem;
-    text-align: center;
-    border: 1px solid transparent;
-    transition: var(--transition);
-} */
-
-/* .contact__option:hover{
-    background: transparent;
-    border-color: var(--color-primary-varient) ;
-} */
-
 .contact__option-icon{
     font-size: 2rem;
 }
@@ -108,9 +94,10 @@ input , textarea{
 
 
 @media screen and (max-width: 1024px) {
-   .contact__container h1{
+   .connect__container{
     text-align: center;
     grid-column: 1 / 1;
+    justify-self: center;
    }
    .contact__container{
     grid-template-columns: 1fr;
@@ -127,6 +114,16 @@ input , textarea{
  @media screen and (max-width: 600px) {
     .contact__container{
         width: 95%;
+    }
+
+    .connect__container{
+        height: 100%;
+        transform: translate(0);
+    }
+
+    .connect__container h1{
+        font-size: 1.5rem;
+        transform: translate(0);
     }
  }
  
