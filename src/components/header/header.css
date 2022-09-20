@@ -169,7 +169,7 @@ header{
     animation-duration: 8s;
 }
 
- .scroll__down {
+ /* .scroll__down {
     position: absolute;
     right: -7vw;
     bottom: 12vh;
@@ -179,7 +179,7 @@ header{
     transition: linear 0.3s;
     animation-name: scroll;
     animation-duration: 8s;
-}
+} */
 
 
 @media screen and (max-width: 1024px) {
