@@ -26,34 +26,35 @@
 
 
 @keyframes socials{
-    0% {transform: translateY(200%);}
-    80% {transform: translateY(200%);}
+    0% {transform: translateY(20vh);}
+    80% {transform: translateY(20vh);}
+    100% {transform: translateY(0);}
+}
+
+@keyframes whats{
+    0% {transform: translateY(30vh);}
+    86% {transform: translateY(30vh);}
     100% {transform: translateY(0);}
 }
 
 @keyframes twit{
-    0% {transform: translateY(400%);}
-    80% {transform: translateY(400%);}
+    0% {transform: translateY(40vh);}
+    80% {transform: translateY(40vh);}
     100% {transform: translateY(0);}
 }
 
 @keyframes git{
-    0% {transform: translateY(700%);}
-    84% {transform: translateY(700%);}
+    0% {transform: translateY(50vh);}
+    84% {transform: translateY(50vh);}
     100% {transform: translateY(0);}
 }
 
 @keyframes linked{
-    0% {transform: translateY(900%);}
-    86% {transform: translateY(900%);}
+    0% {transform: translateY(50vh);}
+    86% {transform: translateY(50vh);}
     100% {transform: translateY(0);}
 }
 
-@keyframes scroll{
-    0% {transform: translateY(-100vh) rotate(90deg) ; }
-    88% {transform: translateY(-100vh) rotate(90deg);}
-    100% {transform:  translateY(0) rotate(90deg);}
-}
 
 header{
     height: 100vh;
@@ -119,12 +120,12 @@ header{
 
 .linked{
     animation-name: linked;
-    animation-duration: 7s;
+    animation-duration: 6s;
 }
 
 .git{
     animation-name: git;
-    animation-duration: 6s;
+    animation-duration: 5.5s;
     font-size: 1.1rem;
 }
 
@@ -132,6 +133,12 @@ header{
     animation-name: twit;
     animation-duration: 5s;
     font-size: 1.3rem;
+}
+
+.whats{
+    animation-name: whats;
+    animation-duration: 4.5s;
+    font-size: 1.2rem;
 }
 
 .mail{

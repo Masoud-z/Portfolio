@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import {BsLinkedin} from'react-icons/bs';
-import {BsGithub} from 'react-icons/bs';
+import {BsGithub, BsWhatsapp} from 'react-icons/bs';
 import {AiFillTwitterCircle} from 'react-icons/ai';
 import {HiMail} from 'react-icons/hi'
 import { scrolledComponent } from '../../helper/scrolled';
@@ -22,6 +22,10 @@ const HeaderSocials = () => {
             
             <a href="https://twitter.com/Masoud_Zin" target="_blank" className='twit' rel="noreferrer">
                 <AiFillTwitterCircle />
+            </a>
+
+            <a href="https://wa.me/+989148450108" target="_blank" rel="noreferrer">
+                <BsWhatsapp className='whats' />
             </a>
 
             <a href="mailto:masoud.zeinalabedini@gmail.com" rel="noreferrer" className='mail'>
