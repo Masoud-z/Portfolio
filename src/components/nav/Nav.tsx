@@ -53,12 +53,12 @@ const Nav = () => {
                  <AiOutlineFileDone />
             </a>
 
-            <a
+            {/* <a
              href="#testimonials"
              onClick={()=>setActive("#testimonials")}
              className={active === '#testimonials' ? 'active' : ''}>
                  <RiServiceLine className='tooltip'/>
-            </a>
+            </a> */}
 
             <a
              href="#contact"

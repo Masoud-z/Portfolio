@@ -8,7 +8,6 @@ import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import Nav from './components/nav/Nav';
 import Portfolio from './components/portfolio/Portfolio';
-import Testimonials from './components/testimonials/Testimonials';
 
 import { scrolledComponent } from './helper/scrolled';
 
@@ -18,7 +17,7 @@ function App() {
   const aboutRef = useRef<HTMLTableSectionElement>(null);
   const experienceRef = useRef<HTMLTableSectionElement>(null);
   const portfolioRef = useRef<HTMLTableSectionElement>(null);
-  const testimonialsRef = useRef<HTMLTableSectionElement>(null);
+  // const testimonialsRef = useRef<HTMLTableSectionElement>(null);
   const contactRef = useRef<HTMLTableSectionElement>(null);
   const footerRef = useRef<HTMLTableSectionElement>(null);
 
@@ -35,7 +34,7 @@ function App() {
     const posAbout= aboutRef.current?.offsetTop as number;
     const posExperience= experienceRef.current?.offsetTop as number;
     const posPortfolio= portfolioRef.current?.offsetTop as number;
-    const posTestimonials= testimonialsRef.current?.offsetTop as number;
+    // const posTestimonials= testimonialsRef.current?.offsetTop as number;
     const posContact= contactRef.current?.offsetTop as number;
     const posFooter= footerRef.current?.offsetTop as number;
 
@@ -53,11 +52,11 @@ function App() {
       window.scrollY + window.innerHeight < posPortfolio
       ) setScrolled('#experience');
       else if ( window.scrollY + window.innerHeight > posPortfolio && 
-        window.scrollY + window.innerHeight < posTestimonials
+        window.scrollY + window.innerHeight < posContact
         ) setScrolled('#portfolio');
-        else if ( window.scrollY + window.innerHeight > posTestimonials && 
-          window.scrollY + window.innerHeight < posContact
-          ) setScrolled('#testimonials');
+        // else if ( window.scrollY + window.innerHeight > posTestimonials && 
+        //   window.scrollY + window.innerHeight < posContact
+        //   ) setScrolled('#testimonials');
           else if ( window.scrollY + window.innerHeight > posContact &&
             window.scrollY + window.innerHeight < posFooter 
             ) setScrolled('#contact');
@@ -86,9 +85,9 @@ function App() {
       <Portfolio />
     </div>
 
-    <div ref={testimonialsRef}>
+    {/* <div ref={testimonialsRef}>
       <Testimonials />
-    </div>
+    </div> */}
 
     <div ref={contactRef}>
       <Contact />
