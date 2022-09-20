@@ -1,3 +1,9 @@
+@keyframes light {
+    100% {
+      transform: translate3d(50%, 50%, 0);
+    }
+  }
+
 footer{
     background: var(--color-primary);
     padding: 3rem 0;
@@ -16,6 +22,8 @@ footer a{
     margin-bottom: 2rem;
     display: inline-block;
 }
+
+
 
 .permalinks{
     display: flex;
