@@ -69,7 +69,7 @@ const Nav = () => {
 
         <div className={ showCTA ?'cta__fixed' : 'cta__fixed out'}>
 
-            <div className='btn__cv'> CV </div>
+            <div className='btn__cv'><b> CV </b></div>
             <a href={CV} 
                download>
             <div className="circle"></div>
