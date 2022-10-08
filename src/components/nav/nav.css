@@ -64,9 +64,6 @@ nav a.active{
     right: 0vw;
     bottom: 8vh;
     color: #4db5ff;
-    /* animation-name: cv-color;
-    animation-duration: 4s;
-    animation-iteration-count: infinite; */
 }
 
 .circle{
@@ -83,9 +80,13 @@ nav a.active{
     animation: spin 2s linear infinite;
 }
 
+.circle:hover{
+    border-color: white;
+}
+
 
 .out{
-    bottom: -30vh;
+    bottom: -50vh;
 }
 
 @media screen and (max-width: 600px) {

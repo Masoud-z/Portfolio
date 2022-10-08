@@ -72,7 +72,7 @@ const Nav = () => {
             <div className='btn__cv'> CV </div>
             <a href={CV} 
                download>
-                <div className="circle"></div>
+            <div className="circle"></div>
             </a>
         </div>
         </>

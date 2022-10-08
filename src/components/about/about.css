@@ -4,19 +4,19 @@
         height: 0%;
         opacity: 1;
     }
-    25%{
+    40%{
         width: 100%;
         height: 0%;
         opacity: 1;
     }
 
-    50%{
+    80%{
         width: 100%;
         height: 100%;
         opacity: 1;
     }
 
-    75%{
+    85%{
         width: 100%;
         height: 100%;
         
@@ -99,7 +99,7 @@
 
     border: 2px solid transparent;
     animation-name: border-line;
-    animation-duration: 10s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
 }
 
