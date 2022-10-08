@@ -35,7 +35,10 @@ body{
     background-color: var(--color-bg);
     color: white;
     line-height: 1.7;
-    background-image: url('../src/assets/bg-texture.png');
+    background-image: url('./assets/bg-img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 

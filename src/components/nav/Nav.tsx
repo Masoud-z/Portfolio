@@ -22,7 +22,7 @@ const Nav = () => {
 
     return (
         <>
-        <nav>
+        <nav className={active === 'footer' ? 'hide' : ''}>
             <a
              href="#header"
              onClick={()=>setActive("#header")}

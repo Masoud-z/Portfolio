@@ -5,7 +5,15 @@
   }
 
 footer{
-    background: var(--color-primary);
+    background-image: -webkit-linear-gradient(top, 
+    rgba(0,0,0,0.9) 0%, 
+    rgba(0,0,0,0) 20%,
+    rgba(0,0,0,0) 80%,
+    rgba(0,0,0,0.9) 100%
+  ),
+  url('../../assets/pexels-shay-wood-574116.jpg');
+    background-size: cover;
+    background-position: center;
     padding: 3rem 0;
     text-align: center;
     font-size: 0.9rem;
@@ -13,7 +21,11 @@ footer{
 }
 
 footer a{
-    color: var(--color-bg);
+    color: white;
+}
+
+footer a:hover{
+    color: var(--color-primary);
 }
 
 .footer__logo{
@@ -21,6 +33,7 @@ footer a{
     font-weight: 500;
     margin-bottom: 2rem;
     display: inline-block;
+    color: #1AA0FF;
 }
 
 
@@ -52,8 +65,8 @@ footer a{
 
 .footer__socials a:hover{
     background-color: transparent;
-    color: var(--color-bg);
-    border-color: var(--color-bg);
+    color: var(--color-primary);
+    border-color: var(--color-primary);
 }
 
 

@@ -186,18 +186,6 @@ header{
     animation-duration: 8s;
 }
 
- /* .scroll__down {
-    position: absolute;
-    right: -7vw;
-    bottom: 12vh;
-    transform: rotate(90deg);
-    font-weight: 300;
-    font-size: 0.9rem;
-    transition: linear 0.3s;
-    animation-name: scroll;
-    animation-duration: 8s;
-} */
-
 
 @media screen and (max-width: 1024px) {
     header{
