@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
+
+
 .size{
     font-size: 1.8rem;
     margin-bottom: 0;
@@ -45,9 +48,11 @@
 
 .contact__options h4{
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     line-height: 2.2rem;
     color: var(--color-light);
+    font-family: 'Kalam', cursive;
+    font-weight: 400;
 }
 
 
@@ -83,6 +88,8 @@ input , textarea{
     background: transparent;
     border: 2px solid var(--color-primary-varient);
     resize: none;
+    font-family: 'Kalam', cursive;
+    font-weight: 400;
 }
 
 

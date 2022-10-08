@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
+
 @keyframes border-line{
     0%{
         width: 0%;
@@ -46,6 +48,8 @@
     display: grid;
     grid-template-columns: 55% 35%;
     gap: 5% 10%;
+    font-family: 'Kalam', cursive;
+    font-weight: 400;
 }
 
 .about__me{
