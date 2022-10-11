@@ -35,6 +35,10 @@
     display: none;
 }
 
+.font{
+    font-family: 'Roboto Slab', serif;
+}
+
     .portfolio__item-cta{
     display: none;
 }

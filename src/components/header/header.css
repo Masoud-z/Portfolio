@@ -100,9 +100,9 @@ header{
     justify-content: center;
 }
 
-.cta a{
+/* .cta a{
     transition: linear 0.5s;
-}
+} */
 
 .btn__header{
     animation-name: btn;

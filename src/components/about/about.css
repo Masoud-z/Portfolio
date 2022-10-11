@@ -100,7 +100,6 @@
     width: 100%;
     height: 100%;
     transition: linear 1s;
-
     border: 2px solid transparent;
     animation-name: border-line;
     animation-duration: 6s;

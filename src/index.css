@@ -93,13 +93,18 @@ a:hover{
     border-radius: 0.4rem;
     cursor: pointer;
     border: 1px solid var(--color-primary);
-    transition: var(--transition);
+    font-family: 'Kalam', cursive;
+    font-weight: 400;
+    /* transition: var(--transition); */
+    background: linear-gradient(#1AA0FF 0 0) var(--p, 0) / var(--p, 0) no-repeat;
+    transition: 0.4s linear, background-position 0s;
 }
 
 .btn:hover{
-    background-color: white;
-    color: var(--color-bg);
+    /* background-color: white; */
+    color: white;
     border-color: transparent;
+    --p: 100%;
 }
 
 .btn-primary{

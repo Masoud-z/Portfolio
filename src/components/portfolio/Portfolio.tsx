@@ -27,14 +27,14 @@ const Portfolio = () => {
                             href={site.github}
                             target="_blank" 
                              rel="noopener noreferrer" 
-                             className='btn'>
+                             className='btn font'>
                                 Github
                             </a>
                             <a
                              href={site.live} 
                              target="_blank" 
                              rel="noopener noreferrer" 
-                             className='btn btn-primary'>
+                             className='btn btn-primary font'>
                                 Live Demo
                             </a>
                         </div>              
