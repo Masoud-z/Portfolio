@@ -1,6 +1,6 @@
 import React from 'react';
 import './footer.css';
-import {BsLinkedin} from'react-icons/bs';
+import {BsLinkedin, BsWhatsapp} from'react-icons/bs';
 import {BsGithub} from 'react-icons/bs';
 import {BsTwitter} from 'react-icons/bs';
 import {MdOutlineMail} from 'react-icons/md'
@@ -22,21 +22,26 @@ const Footer = () => {
             </ul>
 
             <div className="footer__socials">
-                <a href="https://github.com" target="_blank" rel="noreferrer">
-                     <BsGithub/> 
+                <a href="mailto:masoud.zeinalabedini@gmail.com" >
+                    <MdOutlineMail />
                 </a>
-                
+
                 <a href="https://www.linkedin.com/in/masoud-zeinalabedini/" target="_blank" rel="noreferrer">
                      <BsLinkedin/> 
                 </a>
-                
+
+                <a href="https://wa.me/+989148450108" target="_blank" rel="noreferrer">
+                    <BsWhatsapp  />
+                </a>
+
+                <a href="https://github.com" target="_blank" rel="noreferrer">
+                     <BsGithub/> 
+                </a> 
+
                 <a href="https://twitter.com/Masoud_Zin" target="_blank" rel="noreferrer">
                      <BsTwitter/> 
                 </a>
 
-                <a href="mailto:masoud.zeinalabedini@gmail.com" >
-                <MdOutlineMail />
-                </a>
             </div>
         </footer>
     );

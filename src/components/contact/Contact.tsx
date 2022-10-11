@@ -60,13 +60,14 @@ const Contact = () => {
                             <BsWhatsapp className='contact__option-icon' />
                         </a>
 
+                        <a href="https://github.com/Masoud-z" target="_blank"  rel="noreferrer">
+                            <BsGithub className='contact__option-icon'/>
+                        </a>
+                        
                         <a href="https://twitter.com/Masoud_Zin" target="_blank"  rel="noreferrer">
                             <AiOutlineTwitter className='contact__option-icon'/>
                         </a>
 
-                        <a href="https://github.com/Masoud-z" target="_blank"  rel="noreferrer">
-                            <BsGithub className='contact__option-icon'/>
-                        </a>
                     </div>
                 </div>
             
