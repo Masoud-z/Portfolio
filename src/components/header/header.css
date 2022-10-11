@@ -5,7 +5,6 @@
 }
 
  @keyframes bg-me {
-    /* transform:translateX(-50%) scale(0); */
     0%   {transform:translateX(-50%) scale(0);height: 0;}
     40%  {transform:translateX(-50%) scale(0); height: 0;}
     89%  {transform:translateX(-50%) scale(1)}
@@ -88,7 +87,7 @@ header{
 
 .front{
     animation-name: front;
-    animation-duration: 4s;
+    animation-duration: 3s;
 }
 
 
@@ -100,13 +99,10 @@ header{
     justify-content: center;
 }
 
-/* .cta a{
-    transition: linear 0.5s;
-} */
 
 .btn__header{
     animation-name: btn;
-    animation-duration: 6s;
+    animation-duration: 4s;
 }
 
 
@@ -178,12 +174,12 @@ header{
     overflow: hidden;
     padding: 1.5rem 1.5rem 1.5rem 1.5rem;
     animation-name: bg-me;
-    animation-duration: 9s;
+    animation-duration: 3s;
 }
 
 .me img{
     animation-name: me;
-    animation-duration: 8s;
+    animation-duration: 4s;
 }
 
 
