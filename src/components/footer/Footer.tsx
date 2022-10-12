@@ -34,7 +34,7 @@ const Footer = () => {
                     <BsWhatsapp  />
                 </a>
 
-                <a href="https://github.com" target="_blank" rel="noreferrer">
+                <a href="https://github.com/Masoud-z" target="_blank" rel="noreferrer">
                      <BsGithub/> 
                 </a> 
 
