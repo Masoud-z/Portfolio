@@ -1,11 +1,13 @@
+import {useContext} from 'react';
 import './about.css';
 import me from '../../assets/me-about.jpg';
 import CV from '../../assets/cv.pdf';
+import { scrolledComponent } from '../../helper/scrolled';
 
 
 const About = () => {
 
-
+    const {scrolled, setScrolled}: any = useContext(scrolledComponent);
     
     return (
         <section id='about'>
@@ -39,7 +41,7 @@ const About = () => {
                 </div>
 
                 <div className="about__me">
-                    <div className="about__me-image">
+                    <div className={scrolled=== '#about' ? "about__me-image active" : "about__me-image"}>
                         <img src={me} alt="Masoud" />
                     </div>
                 </div>

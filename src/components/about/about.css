@@ -71,12 +71,10 @@
 .about__me-image{
     border-radius: 2rem;
     overflow: hidden;
-    transition: color 0.25s;
-    transform: translate(-3%, -3%);
-    transition: var(--transition);
+    transition: linear 0.6s;
 }
 
-.about__me-image:hover{
+.active{
     transform: translate(-4%, -4%);
 }
 

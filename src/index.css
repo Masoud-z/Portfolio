@@ -12,7 +12,7 @@
 
 :root{
     --color-bg: #1f1f38;
-    --color-bg-varient: #2c2c6c;
+    --color-bg-varient: rgb(44, 44, 108);
     --color-primary: #4db5ff;
     --color-primary-varient: rgba(77,181,255,0.4);
     --color-light: rgba(255, 255, 255, 0.8);
@@ -95,7 +95,6 @@ a:hover{
     border: 1px solid var(--color-primary);
     font-family: 'Kalam', cursive;
     font-weight: 400;
-    /* transition: var(--transition); */
     background: linear-gradient(#1AA0FF 0 0) var(--p, 0) / var(--p, 0) no-repeat;
     transition: 0.4s linear, background-position 0s;
 }
