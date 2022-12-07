@@ -1,9 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
 
+@keyframes contact{
+    0%{transform: scale(0) translateY(-9%);}
+    50%{transform: scale(0) translateY(-9%);}
+    100%{transform: scale(0.8) translateY(-9%);}
+}
+
+#contact{
+    min-width: 60vh;
+}
 
 .size{
     font-size: 1.8rem;
     margin-bottom: 0;
+}
+
+.deactive{
+    display: none;
 }
 
 .contact__container{
@@ -17,6 +30,7 @@
     box-shadow: 1px 1px 5px, -1px -1px 5px ;
     transform: scale(0.8) translateY(-9%);
     transition: var(--transition);
+    animation: contact 1.4s linear;
 }
 
 .contact__container:hover{

@@ -10,7 +10,7 @@
 }
 @keyframes third {
     0%{transform: translateX(-400%)}
-    50%{transform: translateX(-400%)}
+    60%{transform: translateX(-400%)}
     100%{transform: translateX(0%)}
 }
 
@@ -63,7 +63,7 @@
     display: none;
 }
 
-.deavtive{
+.deactive{
     display: none;
 }
 .first{

@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useContext, useRef } from 'react';
 import React from 'react';
 
 import './contact.css';
@@ -11,8 +11,16 @@ import {AiOutlineTwitter} from 'react-icons/ai';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { scrolledComponent } from '../../helper/scrolled';
 
 const Contact = () => {
+
+    let active = false;
+    const { scrolled, setScrolled }: any = useContext(scrolledComponent);
+  
+    if (scrolled == "#contact" || scrolled == "footer") {
+      active = true;
+    }
 
     const notify = () => toast.success("Email sent!",{
         theme: "dark"
@@ -40,7 +48,7 @@ const Contact = () => {
             <h5>Get in Touch</h5>
             <h2 className='size'>Contact Me</h2>
 
-            <div className="container contact__container">
+            <div className={active ? "container contact__container" : "deactive"}>
                 <div className='connect__container'>
                     <h1>Let's Connect!</h1>
                 </div>

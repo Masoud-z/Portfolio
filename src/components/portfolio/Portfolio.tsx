@@ -16,7 +16,7 @@ const Portfolio = () => {
       <h5>My Recent Works</h5>
       <h2>Portfolio</h2>
 
-      <div className={active ? "container portfolio__container" : "deavtive"}>
+      <div className={active ? "container portfolio__container" : "deactive"}>
         <article className="portfolio__item first">
           <div className="portfolio__item-image">
             <img src={IMG1} alt="title" />
