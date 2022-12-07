@@ -20,7 +20,6 @@
 }
 
 .contact__container:hover{
-    transform: scale(0.82) translateY(-9%);
     box-shadow: 1px 1px 10px, -1px -1px 10px ;
 }
 

@@ -1,3 +1,23 @@
+@keyframes first {
+    0%{transform: translateX(-200%)}
+    50%{transform: translateX(-200%)}
+    100%{transform: translateX(0%)}
+}
+@keyframes second {
+    0%{transform: translateX(-300%)}
+    50%{transform: translateX(-300%)}
+    100%{transform: translateX(0%)}
+}
+@keyframes third {
+    0%{transform: translateX(-400%)}
+    50%{transform: translateX(-400%)}
+    100%{transform: translateX(0%)}
+}
+
+#portfolio{
+    min-height: 60vh;
+}
+
 .portfolio__container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -6,7 +26,7 @@
 
 .portfolio__item{
     background:var(--color-bg-varient);
-    padding: 1.3rem;
+    padding: 0.8rem;
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
@@ -43,6 +63,19 @@
     display: none;
 }
 
+.deavtive{
+    display: none;
+}
+.first{
+    animation: first 1s linear;
+}
+
+.second{
+    animation: second 1.7s linear;
+}
+.third{
+    animation: third 2.4s linear;
+}
 
 @media screen and (max-width: 1245px) {
     .btn{

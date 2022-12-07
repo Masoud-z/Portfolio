@@ -54,9 +54,6 @@ function App() {
       else if ( window.scrollY + window.innerHeight > posPortfolio && 
         window.scrollY + window.innerHeight < posContact
         ) setScrolled('#portfolio');
-        // else if ( window.scrollY + window.innerHeight > posTestimonials && 
-        //   window.scrollY + window.innerHeight < posContact
-        //   ) setScrolled('#testimonials');
           else if ( window.scrollY + window.innerHeight > posContact &&
             window.scrollY + window.innerHeight < posFooter 
             ) setScrolled('#contact');
