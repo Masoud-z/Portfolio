@@ -20,9 +20,9 @@ const About = () => {
                     
                     <div  className="border">
                         <p>
-                            Hi there! I'm <span className='name'>Masoud</span>, and I am a self tought <span className="color">Frontend developer</span> with a background in sale and teaching. Some previous limited experience I had with HTML, CSS and JavaScript sparked an interest in web development that I was thrilled to pursue, and the more I learn the more I feel at home in the industry.
+                            Hi there! I'm <span className='name'>Masoud</span>, and I am a self tought <span className="color">Frontend developer</span> with a background in sale, game development and teaching. Some previous limited experience I had with HTML, CSS and JavaScript sparked an interest in web development that I was thrilled to pursue, and the more I learn the more I feel at home in the industry.
                             <br /> <br />
-                            I'm always looking for opportunities to expand upon my skills and <span className="color"> am currently seeking a remote full-time junior Frontend developer position or internship</span>.</p>
+                            I'm always looking for opportunities to expand upon my skills and <span className="color"> am currently seeking a remote full-time junior Frontend developer position</span>.</p>
                     </div>
 
                     <div className='cta'>
