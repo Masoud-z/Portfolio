@@ -1,118 +1,138 @@
-import { useContext, useRef } from 'react';
-import React from 'react';
+import { useContext, useRef } from "react";
+import React from "react";
 
-import './contact.css';
+import "./contact.css";
 
-import {MdOutlineMail} from 'react-icons/md'
-import {BsWhatsapp, BsGithub} from 'react-icons/bs';
-import {FaLinkedinIn} from 'react-icons/fa';
-import {AiOutlineTwitter} from 'react-icons/ai';
+import { MdOutlineMail } from "react-icons/md";
+import { BsTelegram, BsGithub } from "react-icons/bs";
+import { FaLinkedinIn } from "react-icons/fa";
+import { AiOutlineTwitter } from "react-icons/ai";
 
-import emailjs from '@emailjs/browser';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import { scrolledComponent } from '../../helper/scrolled';
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { scrolledComponent } from "../../helper/scrolled";
 
 const Contact = () => {
+  let active = false;
+  const { scrolled, setScrolled }: any = useContext(scrolledComponent);
 
-    let active = false;
-    const { scrolled, setScrolled }: any = useContext(scrolledComponent);
-  
-    if (scrolled == "#contact" || scrolled == "footer") {
-      active = true;
-    }
+  if (scrolled == "#contact" || scrolled == "footer") {
+    active = true;
+  }
 
-    const notify = () => toast.success("Email sent!",{
-        theme: "dark"
+  const notify = () =>
+    toast.success("Email sent!", {
+      theme: "dark",
     });
 
-    const form:any = useRef();
+  const form: any = useRef();
 
-    const sendEmail = (e:any) => {
-        e.preventDefault();
-    
-        emailjs.sendForm('masoud-contact', 'template_9mn2wir', form.current, 'CrjYs_4Qr36nkqtUW')
-          .then((result) => {
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-          });
+  const sendEmail = (e: any) => {
+    e.preventDefault();
 
-        e.target.reset();
-        notify();
-      };
-    
+    emailjs
+      .sendForm(
+        "masoud-contact",
+        "template_9mn2wir",
+        form.current,
+        "CrjYs_4Qr36nkqtUW"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
 
-    return (
-        <section id='contact'>
-            <h5>Get in Touch</h5>
-            <h2 className='size'>Contact Me</h2>
+    e.target.reset();
+    notify();
+  };
 
-            <div className={active ? "container contact__container" : "deactive"}>
-                <div className='connect__container'>
-                    <h1>Let's Connect!</h1>
-                </div>
-                <div className="contact__options">
-                    <h4> I am interested in working with any company that thinks my skill will be helpful for them. If you are looking for someone like me, or just want a quick chat, you can find me on social media or you can send me a message here!</h4>
+  return (
+    <section id="contact">
+      <h5>Get in Touch</h5>
+      <h2 className="size">Contact Me</h2>
 
-                    <div className="cotact__options__social">
-                        <a href="mailto:masoud.zeinalabedini@gmail.com" target="_blank" rel="noreferrer" >
-                            <MdOutlineMail className='contact__option-icon' />
-                        </a>
+      <div className={active ? "container contact__container" : "deactive"}>
+        <div className="connect__container">
+          <h1>Let's Connect!</h1>
+        </div>
+        <div className="contact__options">
+          <h4>
+            {" "}
+            I am interested in working with any company that thinks my skill
+            will be helpful for them. If you are looking for someone like me, or
+            just want a quick chat, you can find me on social media or you can
+            send me a message here!
+          </h4>
 
-                        <a href="https://www.linkedin.com/in/masoud-zeinalabedini/" target="_blank" rel="noreferrer">
-                            <FaLinkedinIn className='contact__option-icon' />
-                        </a>
+          <div className="cotact__options__social">
+            <a
+              href="mailto:masoud.zeinalabedini@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <MdOutlineMail className="contact__option-icon" />
+            </a>
 
-                        <a href="https://wa.me/+989148450108" target="_blank" rel="noreferrer">
-                            <BsWhatsapp className='contact__option-icon' />
-                        </a>
+            <a
+              href="https://www.linkedin.com/in/masoud-zeinalabedini/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaLinkedinIn className="contact__option-icon" />
+            </a>
 
-                        <a href="https://github.com/Masoud-z" target="_blank"  rel="noreferrer">
-                            <BsGithub className='contact__option-icon'/>
-                        </a>
-                        
-                        <a href="https://twitter.com/Masoud_Zin" target="_blank"  rel="noreferrer">
-                            <AiOutlineTwitter className='contact__option-icon'/>
-                        </a>
+            <a
+              href="https://t.me/M_Zinalabedini"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BsTelegram className="contact__option-icon" />
+            </a>
 
-                    </div>
-                </div>
-            
+            <a
+              href="https://github.com/Masoud-z"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BsGithub className="contact__option-icon" />
+            </a>
 
-                <form ref={form} onSubmit={sendEmail}>
-                    <input
-                     type="text" 
-                     name="name" 
-                     placeholder="Your Name" 
-                     required/>
+            <a
+              href="https://twitter.com/Masoud_Zin"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <AiOutlineTwitter className="contact__option-icon" />
+            </a>
+          </div>
+        </div>
 
-                    <input 
-                     type="email" 
-                     name="email" 
-                     placeholder="Your Email" 
-                     required/>
+        <form ref={form} onSubmit={sendEmail}>
+          <input type="text" name="name" placeholder="Your Name" required />
 
-                    <textarea
-                     name="message" 
-                     rows={4} 
-                     placeholder="Your Message" 
-                     required></textarea>
+          <input type="email" name="email" placeholder="Your Email" required />
 
-                    <button
-                     type="submit" 
-                     className='btn btn-primary'>
-                        Send Message
-                    </button>
+          <textarea
+            name="message"
+            rows={4}
+            placeholder="Your Message"
+            required
+          ></textarea>
 
-                    <ToastContainer
-                     autoClose={1000} 
-                     position="top-center"/>
-                </form>
+          <button type="submit" className="btn btn-primary">
+            Send Message
+          </button>
 
-            </div>
-        </section>
-    );
+          <ToastContainer autoClose={1000} position="top-center" />
+        </form>
+      </div>
+    </section>
+  );
 };
 
 export default Contact;
