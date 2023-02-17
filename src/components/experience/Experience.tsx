@@ -3,9 +3,9 @@ import "./experience.css";
 import emotion from "../../assets/emotion.png";
 import { BsBootstrap } from "react-icons/bs";
 import { AiOutlineHtml5 } from "react-icons/ai";
-import { TbBrandCss3 } from "react-icons/tb";
+import { TbBrandCss3, TbBrandNextjs } from "react-icons/tb";
 import { SiJavascript, SiMaterialui, SiTypescript } from "react-icons/si";
-import { FaReact, FaSass } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
 
 const Experience = () => {
   return (
@@ -38,6 +38,11 @@ const Experience = () => {
           <article className="experience__details">
             <FaReact className="experience__details-icon" />
             <h4>React</h4>
+          </article>
+
+          <article className="experience__details">
+            <TbBrandNextjs className="experience__details-icon" />
+            <h4>Next.js</h4>
           </article>
 
           <article className="experience__details">
