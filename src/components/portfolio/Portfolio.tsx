@@ -16,6 +16,14 @@ const Portfolio = () => {
     <section id="portfolio">
       <h5>My Recent Works</h5>
       <h2>Portfolio</h2>
+      <article className="portfolio__description">
+        <p>
+          Fortunatly I got hired soon after I started learning. Since all the
+          code I've written for the company has been private, my Github account
+          and portfolio make it look like I didn’t code at all. But I have been
+          busy writing code almost every day for the past year.
+        </p>
+      </article>
 
       <div className={active ? "container portfolio__container" : "deactive"}>
         <article className="portfolio__item first">
@@ -70,7 +78,7 @@ const Portfolio = () => {
         </article>
         {/* <article className="portfolio__item third">
           <div className="portfolio__item-image">
-            <img src={IMG1} alt="title" />
+            <img src={netflixIMG} alt="title" />
           </div>
           <h3>title</h3>
 
