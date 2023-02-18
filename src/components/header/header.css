@@ -1,205 +1,259 @@
 @keyframes front {
-    0%   {opacity: 0;}
-    80%  {opacity: 0;}
-    100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
- @keyframes bg-me {
-    0%   {transform:translateX(-50%) scale(0);height: 0;}
-    40%  {transform:translateX(-50%) scale(0); height: 0;}
-    89%  {transform:translateX(-50%) scale(1)}
-    100% {transform:translateX(-50%); height: 33rem;}
+@keyframes bg-me {
+  0% {
+    transform: translateX(-50%) scale(0);
+    height: 0;
+  }
+  40% {
+    transform: translateX(-50%) scale(0);
+    height: 0;
+  }
+  89% {
+    transform: translateX(-50%) scale(1);
+  }
+  100% {
+    transform: translateX(-50%);
+    height: 33rem;
+  }
 }
 
- @keyframes me {
-    0%   {transform:translateY(100%); }
-    80%  {transform:translateY(100%); }
-    100% {transform:translateY(0); }
+@keyframes me {
+  0% {
+    transform: translateY(100%);
+  }
+  80% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
-@keyframes btn{
-    0% {scale: 0; color: red; border-color: red;}
-    80% {scale: 0; color: red; border-color: red;}
-    100% {scale: 1; color: red; border-color: red;}
+@keyframes btn {
+  0% {
+    scale: 0;
+    color: red;
+    border-color: red;
+  }
+  80% {
+    scale: 0;
+    color: red;
+    border-color: red;
+  }
+  100% {
+    scale: 1;
+    color: red;
+    border-color: red;
+  }
 }
 
-
-@keyframes socials{
-    0% {transform: translateY(20vh);
-        visibility: hidden;}
-    80% {transform: translateY(20vh);
-         visibility: hidden;}
-    100% {transform: translateY(0);}
+@keyframes socials {
+  0% {
+    transform: translateY(20vh);
+    visibility: hidden;
+  }
+  80% {
+    transform: translateY(20vh);
+    visibility: hidden;
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
-@keyframes whats{
-    0% {transform: translateY(30vh);
-        visibility: hidden;}
-    86% {transform: translateY(30vh);
-        visibility: hidden;}
-    100% {transform: translateY(0);}
+@keyframes whats {
+  0% {
+    transform: translateY(30vh);
+    visibility: hidden;
+  }
+  86% {
+    transform: translateY(30vh);
+    visibility: hidden;
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
-@keyframes twit{
-    0% {transform: translateY(40vh);
-        visibility: hidden;}
-    80% {transform: translateY(40vh);
-        visibility: hidden;}
-    100% {transform: translateY(0);}
+@keyframes twit {
+  0% {
+    transform: translateY(40vh);
+    visibility: hidden;
+  }
+  80% {
+    transform: translateY(40vh);
+    visibility: hidden;
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
-@keyframes git{
-    0% {transform: translateY(50vh);
-        visibility: hidden;}
-    84% {transform: translateY(50vh);
-        visibility: hidden;}
-    100% {transform: translateY(0);}
+@keyframes git {
+  0% {
+    transform: translateY(50vh);
+    visibility: hidden;
+  }
+  84% {
+    transform: translateY(50vh);
+    visibility: hidden;
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
-@keyframes linked{
-    0% {transform: translateY(50vh);
-        visibility: hidden;}
-    86% {transform: translateY(50vh);
-        visibility: hidden;}
-    100% {transform: translateY(0);}
+@keyframes linked {
+  0% {
+    transform: translateY(50vh);
+    visibility: hidden;
+  }
+  86% {
+    transform: translateY(50vh);
+    visibility: hidden;
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
-
-header{
-    height: 100vh;
-    padding-top: 8vh;
-    overflow: hidden;
+header {
+  height: 100vh;
+  padding-top: 8vh;
+  overflow: hidden;
 }
 
-.header__container{
-    text-align: center;
-    height: 100%;
-    position: relative;
+.header__container {
+  text-align: center;
+  height: 100%;
+  position: relative;
 }
 
-.header__container h5{
-    font-size: 1.1rem;
+.header__container h5 {
+  font-size: 1.1rem;
 }
 
-.header__container h1{
-    color: #1AA0FF;
+.header__container h1 {
+  color: #1aa0ff;
 }
 
-.front{
-    animation-name: front;
-    animation-duration: 3s;
+.front {
+  animation-name: front;
+  animation-duration: 3s;
 }
 
-
-
-.cta{
-    margin-top: 5vh;
-    display: flex;
-    gap: 1.5vw;
-    justify-content: center;
+.cta {
+  margin-top: 5vh;
+  display: flex;
+  gap: 1.5vw;
+  justify-content: center;
 }
 
-
-.btn__header{
-    animation-name: btn;
-    animation-duration: 4s;
+.btn__header {
+  animation-name: btn;
+  animation-duration: 4s;
 }
-
 
 .header__socials {
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    gap: 1vh;
-    align-items: center;
-    position: fixed;
-    left: 7vw;
-    bottom: 0;
-    animation-name: socials;
-    animation-duration: 4s;
-    transition: linear 0.7s ;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  align-items: center;
+  position: fixed;
+  left: 7vw;
+  bottom: 0;
+  animation-name: socials;
+  animation-duration: 4s;
+  transition: linear 0.7s;
 }
 
-.get-out{
-    bottom: 100vh;
+.get-out {
+  bottom: 100vh;
 }
 
-.linked{
-    animation-name: linked;
-    animation-duration: 6s;
+.linked {
+  animation-name: linked;
+  animation-duration: 6s;
 }
 
-.git{
-    animation-name: git;
-    animation-duration: 5.5s;
-    font-size: 1.1rem;
+.git {
+  animation-name: git;
+  animation-duration: 5.5s;
+  font-size: 1.1rem;
 }
 
-.twit{
-    animation-name: twit;
-    animation-duration: 5s;
-    font-size: 1.3rem;
+.twit {
+  font-size: 1.3rem;
 }
 
-.whats{
-    animation-name: whats;
-    animation-duration: 4.5s;
-    font-size: 1.2rem;
+.whats {
+  animation-name: whats;
+  animation-duration: 4.5s;
+  font-size: 1.2rem;
 }
 
-.mail{
-    font-size: 1.2rem;
+.mail {
+  animation-name: twit;
+  animation-duration: 5s;
+  font-size: 1.2rem;
 }
 
-.header__socials::after{
-    content: "";
-    width: 1px;
-    height: 4rem;
-    background-color: var(--color-primary);
+.header__socials::after {
+  content: "";
+  width: 1px;
+  height: 4rem;
+  background-color: var(--color-primary);
 }
 
-.header__socials a{
-    transition: linear 0.3s;
+.header__socials a {
+  transition: linear 0.3s;
 }
 
-.me{
-    background: linear-gradient(var(--color-primary), transparent);
-    width: 23rem;
-    height: 33rem;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 5vh;
-    border-radius: 12rem 12rem 0 0;
-    overflow: hidden;
-    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
-    animation-name: bg-me;
-    animation-duration: 3s;
+.me {
+  background: linear-gradient(var(--color-primary), transparent);
+  width: 23rem;
+  height: 33rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 5vh;
+  border-radius: 12rem 12rem 0 0;
+  overflow: hidden;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  animation-name: bg-me;
+  animation-duration: 3s;
 }
 
-.me img{
-    animation-name: me;
-    animation-duration: 4s;
+.me img {
+  animation-name: me;
+  animation-duration: 4s;
 }
-
 
 @media screen and (max-width: 1024px) {
-    header{
-        height: 80vh;
-    }
+  header {
+    height: 80vh;
+  }
 }
-
-
 
 @media screen and (max-width: 640px) {
-   header{
-        height: 100vh;
-        
-    }
+  header {
+    height: 100vh;
+  }
 
-    .header__socials, .scroll__down{
-        display: none;
-    }
+  .header__socials,
+  .scroll__down {
+    display: none;
+  }
 }
-
-
