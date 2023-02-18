@@ -184,13 +184,14 @@ header {
 }
 
 .linked {
-  animation-name: linked;
-  animation-duration: 6s;
+  animation-name: git;
+  animation-duration: 5.5s;
 }
 
 .git {
-  animation-name: git;
-  animation-duration: 5.5s;
+  animation-name: whats;
+  animation-duration: 4.5s;
+
   font-size: 1.1rem;
 }
 
@@ -199,14 +200,14 @@ header {
 }
 
 .whats {
-  animation-name: whats;
-  animation-duration: 4.5s;
+  animation-name: twit;
+  animation-duration: 5s;
   font-size: 1.2rem;
 }
 
 .mail {
-  animation-name: twit;
-  animation-duration: 5s;
+  animation-name: linked;
+  animation-duration: 6s;
   font-size: 1.2rem;
 }
 
