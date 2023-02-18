@@ -1,6 +1,7 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import "./portfolio.css";
-import IMG1 from "../../assets/portfolio1.jpg";
+import netflixIMG from "../../assets/netflix.jpg";
+import landSurferIMG from "../../assets/landSurfer.jpg";
 import { scrolledComponent } from "../../helper/scrolled";
 
 const Portfolio = () => {
@@ -19,13 +20,13 @@ const Portfolio = () => {
       <div className={active ? "container portfolio__container" : "deactive"}>
         <article className="portfolio__item first">
           <div className="portfolio__item-image">
-            <img src={IMG1} alt="title" />
+            <img src={landSurferIMG} alt="title" />
           </div>
-          <h3>title</h3>
+          <h3>LandSurfer</h3>
 
           <div className="portfolio__item-cta">
             <a
-              href="http://github.com"
+              href="https://github.com/Masoud-z/LandSurfer"
               target="_blank"
               rel="noopener noreferrer"
               className="btn font"
@@ -33,7 +34,7 @@ const Portfolio = () => {
               Github
             </a>
             <a
-              href="http://github.com"
+              href="https://land-surfer.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary font"
@@ -44,13 +45,13 @@ const Portfolio = () => {
         </article>
         <article className="portfolio__item second">
           <div className="portfolio__item-image">
-            <img src={IMG1} alt="title" />
+            <img src={netflixIMG} alt="title" />
           </div>
-          <h3>title</h3>
+          <h3>NETFLIX Clone</h3>
 
           <div className="portfolio__item-cta">
             <a
-              href="http://github.com"
+              href="https://github.com/Masoud-z/NETFLIX-Clone"
               target="_blank"
               rel="noopener noreferrer"
               className="btn font"
@@ -58,7 +59,7 @@ const Portfolio = () => {
               Github
             </a>
             <a
-              href="http://github.com"
+              href="https://masoud-z.github.io/NETFLIX-Clone/"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary font"
@@ -67,7 +68,7 @@ const Portfolio = () => {
             </a>
           </div>
         </article>
-        <article className="portfolio__item third">
+        {/* <article className="portfolio__item third">
           <div className="portfolio__item-image">
             <img src={IMG1} alt="title" />
           </div>
@@ -91,7 +92,7 @@ const Portfolio = () => {
               Live Demo
             </a>
           </div>
-        </article>
+        </article> */}
       </div>
     </section>
   );

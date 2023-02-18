@@ -14,12 +14,22 @@ const HeaderSocials = () => {
       }`}
     >
       <a
+        href="mailto:masoud.zeinalabedini@gmail.com"
+        rel="noreferrer"
+        className="mail"
+      >
+        <HiMail />
+      </a>
+      <a
         href="https://www.linkedin.com/in/masoud-zeinalabedini/"
         target="_blank"
         className="linked"
         rel="noreferrer"
       >
         <BsLinkedin />
+      </a>
+      <a href="https://t.me/M_Zinalabedini" target="_blank" rel="noreferrer">
+        <BsTelegram className="whats" />
       </a>
 
       <a
@@ -38,18 +48,6 @@ const HeaderSocials = () => {
         rel="noreferrer"
       >
         <AiFillTwitterCircle />
-      </a>
-
-      <a href="https://t.me/M_Zinalabedini" target="_blank" rel="noreferrer">
-        <BsTelegram className="whats" />
-      </a>
-
-      <a
-        href="mailto:masoud.zeinalabedini@gmail.com"
-        rel="noreferrer"
-        className="mail"
-      >
-        <HiMail />
       </a>
     </div>
   );

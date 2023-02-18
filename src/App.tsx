@@ -16,7 +16,6 @@ function App() {
   const aboutRef = useRef<HTMLTableSectionElement>(null);
   const experienceRef = useRef<HTMLTableSectionElement>(null);
   const portfolioRef = useRef<HTMLTableSectionElement>(null);
-  // const testimonialsRef = useRef<HTMLTableSectionElement>(null);
   const contactRef = useRef<HTMLTableSectionElement>(null);
   const footerRef = useRef<HTMLTableSectionElement>(null);
 
@@ -32,7 +31,6 @@ function App() {
     const posAbout = aboutRef.current?.offsetTop as number;
     const posExperience = experienceRef.current?.offsetTop as number;
     const posPortfolio = portfolioRef.current?.offsetTop as number;
-    // const posTestimonials= testimonialsRef.current?.offsetTop as number;
     const posContact = contactRef.current?.offsetTop as number;
     const posFooter = footerRef.current?.offsetTop as number;
 
@@ -52,12 +50,12 @@ function App() {
     )
       setScrolled("#experience");
     else if (
-      window.scrollY + window.innerHeight > posPortfolio &&
-      window.scrollY + window.innerHeight < posContact
+      window.scrollY + window.innerHeight > posPortfolio + 150 &&
+      window.scrollY + window.innerHeight < posContact + 150
     )
       setScrolled("#portfolio");
     else if (
-      window.scrollY + window.innerHeight > posContact + 60 &&
+      window.scrollY + window.innerHeight > posContact + 150 &&
       window.scrollY + window.innerHeight < posFooter
     )
       setScrolled("#contact");
