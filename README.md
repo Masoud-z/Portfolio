@@ -8,5 +8,5 @@ And this is my portfolio website.
 
 
 - 📫 Email: masoud.zeinalabedini@gmail.com </br>
-<img src="https://raw.githubusercontent.com/Masoud-z/Masoud-z/8b5163f78fdb223d5244fdf50a42f06e06aed444/291709_logo_linked%20in_social%20network_social_social%20media_icon.svg" title="LinkedIn" alt="LinkedIn" width="10" height="10" /> LinkedIn: https://www.linkedin.com/in/masoud-zeinalabedini 
+<img src="https://raw.githubusercontent.com/Masoud-z/Masoud-z/8b5163f78fdb223d5244fdf50a42f06e06aed444/291709_logo_linked%20in_social%20network_social_social%20media_icon.svg" title="LinkedIn" alt="LinkedIn" width="20" height="20" /> LinkedIn: https://www.linkedin.com/in/masoud-zeinalabedini 
 
