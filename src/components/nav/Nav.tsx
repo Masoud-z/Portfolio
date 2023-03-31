@@ -37,6 +37,7 @@ const Nav = () => {
           className={active === "#about" ? "active" : ""}
         >
           <AiOutlineUser />
+          <span className="tooltip">About</span>
         </a>
 
         <a
@@ -45,6 +46,7 @@ const Nav = () => {
           className={active === "#experience" ? "active" : ""}
         >
           <BiBook />
+          <span className="tooltip">Skills</span>
         </a>
 
         <a
@@ -53,6 +55,7 @@ const Nav = () => {
           className={active === "#portfolio" ? "active" : ""}
         >
           <AiOutlineFileDone />
+          <span className="tooltip">Portfolio</span>
         </a>
 
         {/* <a
@@ -67,7 +70,8 @@ const Nav = () => {
           onClick={() => setActive("#contact")}
           className={active === "#contact" ? "active" : ""}
         >
-          <BiMessageSquareDetail className="tooltip" />
+          <BiMessageSquareDetail />
+          <span className="tooltip">Contact</span>
         </a>
       </nav>
 
