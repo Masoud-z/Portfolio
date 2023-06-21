@@ -21,7 +21,7 @@ const About = () => {
               Hi there! I'm <span className="name">Masoud</span>, and I am a
               self tought{" "}
               <span className="color">Frontend Developer (React | NextJs)</span>{" "}
-              with over <span className="color"> one year </span> of experience
+              with over <span className="color"> two years </span> of experience
               with a background in Game Development.
               <br /> <br />
               I'm always looking for opportunities to expand upon my skills and{" "}
