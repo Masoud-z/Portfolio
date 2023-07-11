@@ -26,8 +26,7 @@ const About = () => {
               <br /> <br />
               I'm always looking for opportunities to expand upon my skills and{" "}
               <span className="color">
-                {" "}
-                am currently seeking a remote full-time junior Frontend
+                am currently seeking a remote full-time Frontend
                 developer position
               </span>
               .
