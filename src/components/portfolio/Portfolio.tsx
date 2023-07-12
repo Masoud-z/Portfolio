@@ -2,6 +2,7 @@ import { useContext } from "react";
 import "./portfolio.css";
 import netflixIMG from "../../assets/netflix.jpg";
 import landSurferIMG from "../../assets/landSurfer.jpg";
+import bracketGeneraIMG from "../../assets/tournamentBracketGenerator.jpg";
 import { scrolledComponent } from "../../helper/scrolled";
 
 const Portfolio = () => {
@@ -51,6 +52,33 @@ const Portfolio = () => {
             </a>
           </div>
         </article>
+
+        <article className="portfolio__item first">
+          <div className="portfolio__item-image">
+            <img src={bracketGeneraIMG} alt="title" />
+          </div>
+          <h3>Tournament Bracket Generator</h3>
+
+          <div className="portfolio__item-cta">
+            <a
+              href="https://github.com/Masoud-z/Tournament-Bracket-Generator"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn font"
+            >
+              Github
+            </a>
+            <a
+              href="https://tournament-bracket-generator-masoud-z.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary font"
+            >
+              Live Demo
+            </a>
+          </div>
+        </article>
+
         <article className="portfolio__item second">
           <div className="portfolio__item-image">
             <img src={netflixIMG} alt="title" />
