@@ -53,7 +53,7 @@ const Portfolio = () => {
           </div>
         </article>
 
-        <article className="portfolio__item first">
+        <article className="portfolio__item second">
           <div className="portfolio__item-image">
             <img src={bracketGeneraIMG} alt="title" />
           </div>
@@ -79,7 +79,7 @@ const Portfolio = () => {
           </div>
         </article>
 
-        <article className="portfolio__item second">
+        <article className="portfolio__item third">
           <div className="portfolio__item-image">
             <img src={netflixIMG} alt="title" />
           </div>
