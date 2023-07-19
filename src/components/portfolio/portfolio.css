@@ -22,7 +22,7 @@
 }
 @keyframes third {
   0% {
-    transform: translateX(-400%);
+    transform: translateX(-600%);
   }
   60% {
     transform: translateX(-400%);
