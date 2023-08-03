@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub, BsTelegram } from "react-icons/bs";
 import { AiFillTwitterCircle } from "react-icons/ai";
@@ -6,7 +6,7 @@ import { HiMail } from "react-icons/hi";
 import { scrolledComponent } from "../../helper/scrolled";
 
 const HeaderSocials = () => {
-  const { scrolled, setScrolled }: any = useContext(scrolledComponent);
+  const { scrolled }: any = useContext(scrolledComponent);
   return (
     <div
       className={`header__socials ${
