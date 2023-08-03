@@ -7,9 +7,9 @@ import { scrolledComponent } from "../../helper/scrolled";
 
 const Portfolio = () => {
   let active = false;
-  const { scrolled, setScrolled }: any = useContext(scrolledComponent);
+  const { scrolled }: any = useContext(scrolledComponent);
 
-  if (scrolled == "#portfolio" || scrolled == "#contact") {
+  if (scrolled === "#portfolio" || scrolled === "#contact") {
     active = true;
   }
 
@@ -19,7 +19,7 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
       <article className="portfolio__description">
         <p>
-          Fortunatly I got hired soon after I started learning. Since all the
+          Fortunately I got hired soon after I started learning. Since all the
           code I've written for the company has been private, my Github account
           and portfolio make it look like I didn’t code at all. But I have been
           busy writing code almost every day for past two years.
