@@ -40,7 +40,7 @@
 }
 
 .contact__container:hover {
-  box-shadow: 1px 1px 10px, -1px -1px 10px;
+  box-shadow: 1px 1px 20px, -1px -1px 20px;
 }
 
 .connect__container {

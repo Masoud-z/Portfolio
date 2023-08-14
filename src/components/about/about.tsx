@@ -19,15 +19,14 @@ const About = () => {
           <div className="border">
             <p>
               Hi there! I'm <span className="name">Masoud</span>, and I am a
-              self tought{" "}
               <span className="color">Frontend Developer (React | NextJs)</span>{" "}
-              with over <span className="color"> two years </span> of experience
-              with a background in Game Development.
+              with about <span className="color"> three years </span> of
+              experience with a background in Game Development.
               <br /> <br />
               I'm always looking for opportunities to expand upon my skills and{" "}
               <span className="color">
-                am currently seeking a remote full-time Frontend
-                developer position
+                am currently seeking a remote full-time Frontend developer
+                position
               </span>
               .
             </p>
@@ -47,8 +46,8 @@ const About = () => {
           <div
             className={
               scrolled === "#about"
-                ? "about__me-image active"
-                : "about__me-image"
+                ? "about__me-image "
+                : "about__me-image active"
             }
           >
             <img src={me} alt="Masoud" />
