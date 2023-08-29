@@ -32,10 +32,6 @@
   }
 }
 
-#portfolio {
-  min-height: 60vh;
-}
-
 .portfolio__description {
   margin: -30px 0 20px 0;
   display: flex;

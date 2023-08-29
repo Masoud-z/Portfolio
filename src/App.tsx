@@ -40,12 +40,12 @@ function App() {
     ) {
       setScrolled("#header");
     } else if (
-      window.scrollY + window.innerHeight > posAbout &&
-      window.scrollY + window.innerHeight < posExperience
+      window.scrollY + window.innerHeight > posAbout + 150 &&
+      window.scrollY + window.innerHeight < posExperience + 150
     )
       setScrolled("#about");
     else if (
-      window.scrollY + window.innerHeight > posExperience &&
+      window.scrollY + window.innerHeight > posExperience + 150 &&
       window.scrollY + window.innerHeight < posPortfolio
     )
       setScrolled("#experience");

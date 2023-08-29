@@ -13,6 +13,10 @@ const Nav = () => {
   const { scrolled, setScrolled }: any = useContext(scrolledComponent);
   const [active, setActive] = useState("#header");
   useEffect(() => {
+    setActive(window.location.hash);
+    setScrolled(window.location.hash);
+  }, []);
+  useEffect(() => {
     setActive(scrolled);
   }, [scrolled]);
 

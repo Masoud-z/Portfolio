@@ -5,7 +5,7 @@ import CV from "../../assets/Masoud-Zeinalabedini.pdf";
 import { scrolledComponent } from "../../helper/scrolled";
 
 const About = () => {
-  const { scrolled, setScrolled }: any = useContext(scrolledComponent);
+  const { scrolled }: any = useContext(scrolledComponent);
 
   return (
     <section id="about">
@@ -46,8 +46,8 @@ const About = () => {
           <div
             className={
               scrolled === "#about"
-                ? "about__me-image "
-                : "about__me-image active"
+                ? "about__me-image active"
+                : "about__me-image "
             }
           >
             <img src={me} alt="Masoud" />
