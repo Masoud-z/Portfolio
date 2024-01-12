@@ -11,8 +11,10 @@ import {
   SiRedux,
   SiTailwindcss,
   SiFirebase,
+  SiExpress,
+  SiStorybook,
 } from "react-icons/si";
-import { FaReact } from "react-icons/fa";
+import { FaNodeJs, FaReact } from "react-icons/fa";
 import VanillaTilt from "vanilla-tilt";
 
 const Experience = () => {
@@ -28,6 +30,9 @@ const Experience = () => {
   const tiltRef10: any = useRef();
   const tiltRef11: any = useRef();
   const tiltRef12: any = useRef();
+  const tiltRef13: any = useRef();
+  const tiltRef14: any = useRef();
+  const tiltRef15: any = useRef();
   useEffect(() => {
     const tiltNode1: any = tiltRef1.current;
     VanillaTilt.init(tiltNode1, {
@@ -113,6 +118,27 @@ const Experience = () => {
       glare: true,
       "max-glare": 0.5,
     });
+    const tiltNode13: any = tiltRef13.current;
+    VanillaTilt.init(tiltNode13, {
+      max: 25,
+      speed: 400,
+      glare: true,
+      "max-glare": 0.5,
+    });
+    const tiltNode14: any = tiltRef14.current;
+    VanillaTilt.init(tiltNode14, {
+      max: 25,
+      speed: 400,
+      glare: true,
+      "max-glare": 0.5,
+    });
+    const tiltNode15: any = tiltRef15.current;
+    VanillaTilt.init(tiltNode15, {
+      max: 25,
+      speed: 400,
+      glare: true,
+      "max-glare": 0.5,
+    });
     return () => {
       tiltNode1.vanillaTilt.destroy();
       tiltNode2.vanillaTilt.destroy();
@@ -126,6 +152,9 @@ const Experience = () => {
       tiltNode10.vanillaTilt.destroy();
       tiltNode11.vanillaTilt.destroy();
       tiltNode12.vanillaTilt.destroy();
+      tiltNode13.vanillaTilt.destroy();
+      tiltNode14.vanillaTilt.destroy();
+      tiltNode15.vanillaTilt.destroy();
     };
   }, []);
   return (
@@ -135,6 +164,14 @@ const Experience = () => {
 
       <div className="container experience__container">
         <div className="experience__content">
+          <article ref={tiltRef4} className="experience__details">
+            <SiJavascript className="experience__details-icon" />
+            <h4>JavaScript</h4>
+          </article>
+          <article ref={tiltRef5} className="experience__details">
+            <SiTypescript className="experience__details-icon" />
+            <h4>TypeScript</h4>
+          </article>
           <article ref={tiltRef1} className="experience__details">
             <FaReact className="experience__details-icon" />
             <h4>React</h4>
@@ -143,17 +180,17 @@ const Experience = () => {
             <TbBrandNextjs className="experience__details-icon" />
             <h4>Next.js</h4>
           </article>
+          <article ref={tiltRef13} className="experience__details">
+            <FaNodeJs className="experience__details-icon" />
+            <h4>Node.js</h4>
+          </article>
+          <article ref={tiltRef14} className="experience__details">
+            <SiExpress className="experience__details-icon" />
+            <h4>Express.js</h4>
+          </article>
           <article ref={tiltRef3} className="experience__details">
             <SiRedux className="experience__details-icon" />
             <h4>Redux</h4>
-          </article>
-          <article ref={tiltRef4} className="experience__details">
-            <SiJavascript className="experience__details-icon" />
-            <h4>JavaScript</h4>
-          </article>
-          <article ref={tiltRef5} className="experience__details">
-            <SiTypescript className="experience__details-icon" />
-            <h4>TypeScript</h4>
           </article>
           <article ref={tiltRef6} className="experience__details">
             <SiFirebase className="experience__details-icon" />
@@ -166,6 +203,10 @@ const Experience = () => {
           <article ref={tiltRef8} className="experience__details">
             <TbBrandCss3 className="experience__details-icon" />
             <h4>CSS</h4>
+          </article>
+          <article ref={tiltRef15} className="experience__details">
+            <SiStorybook className="experience__details-icon" />
+            <h4>Storybook</h4>
           </article>
 
           <article ref={tiltRef9} className="experience__details">

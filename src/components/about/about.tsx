@@ -18,14 +18,14 @@ const About = () => {
         <div className="about__content">
           <div className="border">
             <p>
-              Hi there! I'm <span className="name">Masoud</span>, and I am a
-              <span className="color">Frontend Developer (React | NextJs)</span>{" "}
-              with about <span className="color"> three years </span> of
+              Hi there! I'm <span className="name">Masoud</span>, a
+              <span className="color"> Wed Developer (React | Node.js)</span>{" "}
+              with <span className="color"> three years </span> of
               experience with a background in Game Development.
               <br /> <br />
               I'm always looking for opportunities to expand upon my skills and{" "}
               <span className="color">
-                am currently seeking a remote full-time Frontend developer
+                am currently seeking a full-time Web developer
                 position
               </span>
               .
