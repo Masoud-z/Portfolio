@@ -2,7 +2,7 @@ Hello there </br>
 I'm Masoud Zeinalabedini, a fronted developer.
 And this is my portfolio website.
 </br>
-:globe_with_meridians: Live: https://masoud.live/
+:globe_with_meridians: Live: https://portfolio-h0r872jq8-masoud-z.vercel.app/
 
 ### :high_brightness: Here is my Contact information:
 
